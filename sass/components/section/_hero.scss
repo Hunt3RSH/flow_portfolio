@@ -3,13 +3,90 @@
     // padding-bottom: 200px;
     margin: 0 auto;
     background: var(--background-color);
-    background-image:
-    linear-gradient(rgba(47,48,58,0.4),
-    rgba(47,48,58,0.4)),
-    url(../images/bg.jpg);
+    // background-image:
+    // linear-gradient(rgba(47,48,58,0.4),
+    // rgba(47,48,58,0.4)),
+    // url(../images/hero/sm/header1x.jpg);
     background-repeat: no-repeat;
     background-position: 50% 50%;
-    max-width: 1600px;
+    // max-width: 1600px;
+
+
+    // 480
+    @media screen
+    and (max-width: $max-brp-md) {
+        background-image:
+        linear-gradient(rgba(47,48,58,0.4),
+        rgba(47,48,58,0.4)),
+        url(../images/hero/sm/header1x.jpg);
+        object-fit:contain;
+        max-width: 480px;
+
+        @media screen and (min-width: $min-brp-sm) 
+        and (max-width: $max-brp-md),
+        (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image:
+            linear-gradient(rgba(47,48,58,0.4),
+            rgba(47,48,58,0.4)),
+            url(../images/hero/sm/header2x.jpg);
+            object-fit:contain;
+            background-size: cover;
+            max-width: 480px;
+        }
+    }
+    // 768
+    @media screen and (min-width: $min-brp-md) 
+    and (max-width: $max-brp-xl) {
+        background-image:
+        linear-gradient(rgba(47,48,58,0.4),
+        rgba(47,48,58,0.4)),
+        url(../images/hero/md/header1x.jpg);
+        object-fit:contain;
+        max-width: 768px;
+
+
+        @media screen and (min-width: $min-brp-md) 
+        and (max-width: $max-brp-xl),
+        (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image:
+            linear-gradient(rgba(47,48,58,0.4),
+            rgba(47,48,58,0.4)),
+            url(../images/hero/md/header2x.jpg);
+            object-fit:contain;
+            background-size: cover;
+            max-width: 768px;
+        }
+    }
+
+
+    // 1600
+    @media screen and (min-width: $min-brp-xl) {
+        background-image:
+        linear-gradient(rgba(47,48,58,0.4),
+        rgba(47,48,58,0.4)),
+        url(../images/hero/xl/header1x.jpg);
+        object-fit:contain;
+        background-size: cover;
+        max-width: 1600px;
+
+        @media screen and (min-width: $min-brp-xl),
+        (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image:
+            linear-gradient(rgba(47,48,58,0.4),
+            rgba(47,48,58,0.4)),
+            url(../images/hero/xl/header2x.jpg);
+            object-fit:contain;
+            background-size: cover;
+            max-width: 1600px;
+        }
+    }
+    // positio
     @media screen and (max-width: $max-brp-md) {
         margin-top: 60px;
     }

@@ -32,12 +32,46 @@
     height: 100vh;
     width: 100%;
     z-index: 10;
-    padding: 60px 15px;
+    padding: 48px 40px 70px 40px;
     &.is-open {
-        display: block;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
     }
 }
-.menu-btn__open {
+
+.menu-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 32px;
 }
-.menu-btn__close {
+.menu-contact {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 32px;
+    margin-bottom: 64px;
+}
+.menu-social {
+    margin: 0 -10px 0 -10px;
+    &__link {
+        margin: 10px;
+    }
+}
+
+.menu-text {
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 47px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: $font-main;
+}
+.contacts-menu {
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 40px;
+    letter-spacing: 0.02em;
+    color: $font-main-light;
 }
