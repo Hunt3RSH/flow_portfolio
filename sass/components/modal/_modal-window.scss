@@ -1,7 +1,7 @@
 .modal {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     position: fixed;
     top: 0;
     left: 0;
@@ -12,9 +12,24 @@
     height: 100vh;
     background-color: rgba(0, 0, 0, 0.2);
     z-index: 30;
+    overflow-y: scroll;
+
 
     transition-property: opacity, visibility;
     @extend %animation;
+    @media screen and (max-width: $max-brp-sm) {
+        padding-top: 93px;
+        padding-bottom: 93px;
+    }
+    @media screen and (min-width: $min-brp-sm) and 
+    (max-width: $max-brp-xl) {
+        padding-top: 203px;
+        padding-bottom: 203px;
+    }
+    @media screen and (min-width: $min-brp-xl) {
+        padding-top: 221px;
+        padding-bottom: 221px;
+    }
 }
 .modal.is-hidden {
     visibility: hidden;

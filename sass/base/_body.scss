@@ -3,15 +3,29 @@ body {
     color: var(--font-main);
     margin: 0;
 }
+body.lock {
+    overflow: hidden;
+}
+main {
+    @media screen and (max-width: $max-brp-md) {
+        margin-top: 60px;
+    }
+}
 /* scrollbar */
 ::-webkit-scrollbar {
-    width: 20px;
+    @media screen and (min-width: $min-brp-md) {
+        width: 20px;
+    }
 }
 ::-webkit-scrollbar-track {
-    background: var(--background-light);
+    @media screen and (min-width: $min-brp-md) {
+        background: var(--background-light);
+    }
 }
 ::-webkit-scrollbar-thumb {
-    background: var(--hover-blue);
+    @media screen and (min-width: $min-brp-md) {
+        background: var(--hover-blue);
+    }
 }
 /* selection */
 h1::selection {

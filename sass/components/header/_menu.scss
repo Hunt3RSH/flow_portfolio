@@ -2,6 +2,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    // position: absolute;
     width: 40px;
     height: 40px;
     margin: 0;
@@ -21,22 +22,44 @@
     &.is-open .menu-btn__open {
         display: none;
     }
+    svg {
+        transition-property: fill;
+        @extend %animation;
+    }
+    &:hover svg,
+    &:focus svg{
+        fill: $hover;
+    }
 }
 .menu {
-    display: none;
-    position: absolute;
+    position: fixed;
     background: var(--font-secondary);
     // opacity: 0.3;
-    top: 0;
+    top: -100%;
+    opacity: 0;
     left: 0;
     height: 100vh;
     width: 100%;
     z-index: 10;
-    padding: 48px 40px 70px 40px;
+    padding: 48px 40px 48px 40px;
+
+
+    transition-property: top, opacity;
+    @extend %animation;
     &.is-open {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        overflow-y: scroll;
+        top: 0;
+        opacity: 1;
+
+        transition-property: top, opacity;
+        @extend %animation;
+
+        @media screen and (min-width: $min-brp-md) {
+            display: none;
+        }
     }
 }
 
@@ -45,6 +68,9 @@
     flex-direction: column;
     align-items: flex-start;
     gap: 32px;
+    li {
+        width: 100%;
+    }
 }
 .menu-contact {
     display: flex;
@@ -54,24 +80,75 @@
     margin-bottom: 64px;
 }
 .menu-social {
+    display: flex;
+    flex-wrap: wrap;
     margin: 0 -10px 0 -10px;
     &__link {
         margin: 10px;
+        font-weight: 500;
+        line-height: 1.22;
+        letter-spacing: 0.02em;
+        color: $hover;
     }
 }
-
+.menu-social__link {
+    @media screen and (max-width: $max-brp-sm) {
+        font-size: 14px;
+    }
+    @media screen and (min-width: $min-brp-sm) {
+        font-size: 18px;
+    }
+}
 .menu-text {
+    display: flex;
     font-weight: 500;
-    font-size: 40px;
-    line-height: 47px;
+    line-height: 1.17;
     text-align: center;
     letter-spacing: 0.02em;
     color: $font-main;
+    width: 100%;
+
+    transition-property: color;
+    @extend %animation;
+
+    &:hover,
+    &:focus{
+        color: $hover;
+    }
+    @media screen and (max-width: $max-brp-sm) {
+        font-size: 30px;
+    }
+    @media screen and (min-width: $min-brp-sm) {
+        font-size: 40px;
+    }
 }
 .contacts-menu {
     font-weight: 500;
-    font-size: 34px;
-    line-height: 40px;
+    line-height: 1.17;
     letter-spacing: 0.02em;
     color: $font-main-light;
+
+    &__nomber {
+        font-weight: 500;
+        line-height: 1.17;
+        letter-spacing: 0.02em;
+        color: $hover;
+        @media screen and (max-width: $max-brp-sm) {
+            font-size: 20px;
+        }
+        @media screen and (min-width: $min-brp-sm) {
+            font-size: 34px;
+        }
+    }
+
+    @media screen and (max-width: $max-brp-sm) {
+        font-size: 20px;
+    }
+    @media screen and (min-width: $min-brp-sm) {
+        font-size: 34px;
+    }
+}
+
+.current-page {
+    color: $hover;
 }
