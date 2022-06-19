@@ -35,7 +35,7 @@
     position: fixed;
     background: var(--font-secondary);
     // opacity: 0.3;
-    top: -100%;
+    top: -120%;
     opacity: 0;
     left: 0;
     height: 100vh;
@@ -89,6 +89,14 @@
         line-height: 1.22;
         letter-spacing: 0.02em;
         color: $hover;
+    }
+    li:after {
+        content: "";
+        height: 100%;
+        border: 1px solid rgba(33, 33, 33, 0.2);
+    }
+    li:last-child:after {
+        border: none;
     }
 }
 .menu-social__link {

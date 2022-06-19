@@ -660,7 +660,7 @@ li {
 .menu {
   position: fixed;
   background: var(--font-secondary);
-  top: -100%;
+  top: -120%;
   opacity: 0;
   left: 0;
   height: 100vh;
@@ -743,6 +743,16 @@ li {
   line-height: 1.22;
   letter-spacing: 0.02em;
   color: #2196F3;
+}
+
+.menu-social li:after {
+  content: "";
+  height: 100%;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+}
+
+.menu-social li:last-child:after {
+  border: none;
 }
 
 @media screen and (max-width: 479px) {
