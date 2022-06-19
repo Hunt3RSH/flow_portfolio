@@ -1,6 +1,12 @@
 .nav_bg {
     background-color: var(--font-secondary);
     border-bottom: 1px solid var(--border);
+    @media screen and (max-width: $max-brp-md) {
+        position: fixed;
+        width: 100%;
+        top: 0;
+        z-index: 25;
+    }
 }
 .nav-center {
     display: flex;
@@ -13,9 +19,19 @@
     flex-direction: row;
 }
 .navbar_text {
-    margin-left: 93px;
+    // margin-left: 93px;
     display: flex;
     gap: 50px;
+
+    @media screen and (max-width: $max-brp-md) {
+        display: none;
+    }
+    @media screen and (max-width: $max-brp-xl) {
+        margin-left: 88px;
+    }
+    @media screen and (min-width: $min-brp-xl) {
+        margin-left: 93px;
+    }
 }
 .nav_text {
     position: relative;
@@ -32,6 +48,9 @@
     &:hover,
     &:focus {
         color: var(--hover-blue);
+    }
+    @media screen and (max-width: $max-brp-md) {
+        display: none;
     }
 }
 .active {

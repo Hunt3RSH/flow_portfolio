@@ -1,8 +1,21 @@
 
 
 .btn-li {
+    display: flex;
+    flex-wrap:wrap;
     gap: 8px;
-    margin-bottom: 50px;
+    @media screen and (max-width: $max-brp-md) {
+        margin-bottom: 40px;
+    }
+    @media screen and (min-width: $min-brp-md) 
+    and (max-width: $max-brp-xl) {
+        justify-content: center;
+        margin-bottom: 30px;
+    }
+    @media screen and (min-width: $min-brp-xl) {
+        justify-content: center;
+        margin-bottom: 50px;
+    }
 }
 .pbuttons {
     background: var(--background-light);

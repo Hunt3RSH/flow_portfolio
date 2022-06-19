@@ -101,10 +101,16 @@
     margin-top: 20px;
     font-style: normal;
     font-weight: 400;
-    font-size: 14px;
+    // font-size: 14px;
     line-height: 1.714;
     letter-spacing: 0.03em;
     color: var(--font-main-light);
+    @media screen and (max-width: $max-brp-xl) {
+        font-size: 12px;
+    }
+    @media screen and (min-width: $min-brp-xl) {
+        font-size: 14px;
+    }
 }
 .form-submit_label {
     position: relative;
@@ -120,10 +126,12 @@
     -webkit-appearance:none;
     -moz-appearance:none;
     appearance:none;
+
+
     top: 0;
     left: 0;
     transform: translate(-50% -50%);
-    margin-right: 26px;
+    margin-right: 22px;
     &:checked + .checkbox-check {
         opacity: 1;
         transform: scale(1);
@@ -156,12 +164,17 @@
 }
 .checkbox-policy {
     font-weight: 400;
-    font-size: 14px;
+    // font-size: 14px;
     line-height: 1.714;
     letter-spacing: 0.03em;
     text-decoration-line: underline;
     color: var(--hover-blue);
-    margin-left: 5px;
+    @media screen and (max-width: $max-brp-xl) {
+        font-size: 12px;
+    }
+    @media screen and (min-width: $min-brp-xl) {
+        font-size: 14px;
+    }
 }
 .form-submit__btn {
     display: flex;

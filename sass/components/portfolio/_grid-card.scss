@@ -15,6 +15,9 @@
     overflow: hidden;
     @extend %animation;
     transition-duration: 500ms;
+    @media screen and (max-width: $max-brp-md) {
+        width: 100%;
+    }
 }
 .product {
     overflow: hidden;
@@ -48,7 +51,13 @@
 }
 .product-img {
     display: block;
-    width: 370px;
+    @media screen and (max-width: $max-brp-md) {
+        width: 100%;
+    }
+    @media screen and (min-width: $min-brp-md) 
+    and (max-width: $max-brp-xl) {
+        width: 354px;
+    }
 }
 .product-img__title {
     position: absolute;
@@ -59,7 +68,7 @@
     opacity: 0;
     transform: translateY(0);
     font-weight: 400;
-    font-size: 18px;
+    // font-size: 18px;
     line-height: 28px;
     letter-spacing: 0.03em;
     background-color: var(--bg-product-item);
@@ -67,7 +76,16 @@
     pointer-events: none;
 
     transition-property: opacity, transform;
-    @extend %animation
+    @extend %animation;
+
+    @media screen and (max-width: $max-brp-md) {
+        font-size: 15px;
+    }
+
+    @media screen and (min-width: $min-brp-md) {
+        font-size: 18px;
+    }
+    
 }
 .border {
     padding: 20px 24px;

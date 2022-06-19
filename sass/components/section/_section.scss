@@ -6,6 +6,9 @@
 }
 .section.pading-bottom {
     padding-bottom: 0;
+    @media screen and (max-width: $max-brp-xl) {
+        padding-bottom: 60px;
+    }
 }
 
 .section-title {

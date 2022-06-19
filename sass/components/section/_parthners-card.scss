@@ -1,16 +1,25 @@
 .parthners {
     display: flex;
-    flex-direction: row;
+    // flex-direction: row;
     gap: 30px;
+    @media screen and (max-width: $max-brp-xl) {
+        flex-wrap: wrap;
+    }
 }
 .parthners-group {
-    width: calc((100% - 150px) / 6);
+    // width: calc((100% - 150px) / 6);
+    @media screen and (max-width: $max-brp-md) {
+        width: calc((100% - 30px) / 2);
+    }
+    @media screen and (min-width: $min-brp-md) {
+        width: calc((100% - 60px) / 3);
+    }
 }
 .parthners-group__item {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 170px;
+    // width: 170px;
     height: 92px;
     border-radius: 4px;
     fill: var(--social-main);
@@ -25,4 +34,5 @@
         fill: var(--hover-blue);
         outline: none;
     }
+
 }

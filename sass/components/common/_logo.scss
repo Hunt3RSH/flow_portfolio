@@ -6,6 +6,10 @@
     line-height: 1.19;
     letter-spacing: 0.03em;
     color: var(--font-main);
+    z-index: 25;
+    @media screen and (max-width: $max-brp-md) {
+        padding: 16px 0 16px 0;
+    }
 }
 .logo-web {
     color: var(--hover-blue);

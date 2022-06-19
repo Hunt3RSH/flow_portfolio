@@ -1,9 +1,14 @@
-
+.kind-hide {
+    @media screen and (max-width: $max-brp-xl) {
+        display: none;
+    }
+}
 
 .kind {
     display: flex;
     width: 100%;
     gap: 30px;
+
 }
 .kind-box {
     position: relative;

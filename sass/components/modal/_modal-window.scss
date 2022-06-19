@@ -28,7 +28,7 @@
 .modal-window {
     position: relative;
     z-index: 10;
-    width: 528px;
+    // width: 528px;
     border-radius: 5px;
     transform: scale(1);
     background-color: var(--font-secondary);
@@ -39,6 +39,20 @@
 
     transition-property: transform;
     @extend %animation;
+
+    @media screen and (max-width: $max-brp-sm) {
+        margin: 0 15px;
+        width: 100%;
+    }
+
+    @media screen and (min-width: $min-brp-sm)
+    and (max-width: $max-brp-xl) {
+        width: 450px;
+    }
+
+    @media screen and (min-width: $min-brp-xl) {
+        width: 528px;
+    }
 
 }
 .btn-close {
