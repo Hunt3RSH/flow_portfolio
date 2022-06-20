@@ -1,4 +1,4 @@
-.button, .social_btn_footer, .nav_text, .contacts_nom, .contact_icon, .menu-btn svg, .menu, .menu.is-open, .menu-text, .social_btn, .parthners-group__item, .form-field svg, .form-field__input, .checkbox-check, .checkbox-box, .modal, .modal-window, .btn-close svg, .pbuttons, .grid-item, .product, .product-item, .product-img__title {
+.button, .social_btn_footer, .nav_text, .contacts_nom, .contact_icon, .menu-btn .menu-btn__close, .menu-btn svg, .menu-btn__open, .menu, .menu.is-open, .menu-text, .social_btn, .parthners-group__item, .form-field svg, .form-field__input, .checkbox-check, .checkbox-box, .modal, .modal-window, .btn-close svg, .pbuttons, .grid-item, .product, .product-item, .product-img__title {
   -webkit-transition-duration: 250ms;
           transition-duration: 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -642,15 +642,29 @@ li {
 }
 
 .menu-btn .menu-btn__close {
-  display: none;
+  -webkit-transition-property: opacity, -webkit-transform, -webkit-transform-origin;
+  transition-property: opacity, -webkit-transform, -webkit-transform-origin;
+  transition-property: opacity, transform, transform-origin;
+  transition-property: opacity, transform, transform-origin, -webkit-transform, -webkit-transform-origin;
+  opacity: 0;
+  -webkit-transform-origin: center center;
+          transform-origin: center center;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
 }
 
 .menu-btn.is-open .menu-btn__close {
-  display: block;
+  opacity: 1;
+  -webkit-transform-origin: center center;
+          transform-origin: center center;
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
 }
 
 .menu-btn.is-open .menu-btn__open {
-  display: none;
+  opacity: 0;
+  -webkit-transform: translateX(24px);
+          transform: translateX(24px);
 }
 
 .menu-btn svg {
@@ -661,6 +675,16 @@ li {
 .menu-btn:hover svg,
 .menu-btn:focus svg {
   fill: #2196F3;
+}
+
+.menu-btn__open {
+  -webkit-transition-property: opacity, -webkit-transform, -webkit-transform-origin;
+  transition-property: opacity, -webkit-transform, -webkit-transform-origin;
+  transition-property: opacity, transform, transform-origin;
+  transition-property: opacity, transform, transform-origin, -webkit-transform, -webkit-transform-origin;
+  opacity: 1;
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
 }
 
 .menu {

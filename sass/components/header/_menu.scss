@@ -14,13 +14,21 @@
         display: none;
     }
     .menu-btn__close {
-        display: none;
+        transition-property: opacity, transform, transform-origin;
+        @extend %animation;
+
+        opacity: 0;
+        transform-origin: center center;
+        transform: rotate(45deg);
     }
     &.is-open .menu-btn__close {
-        display: block;
+        opacity: 1;
+        transform-origin: center center;
+        transform: rotate(0deg);
     }
     &.is-open .menu-btn__open {
-        display: none;
+        opacity: 0;
+        transform: translateX(24px);
     }
     svg {
         transition-property: fill;
@@ -30,6 +38,13 @@
     &:focus svg{
         fill: $hover;
     }
+}
+.menu-btn__open {
+    transition-property: opacity, transform, transform-origin;
+    @extend %animation;
+    
+    opacity: 1;
+    transform: translateX(0);
 }
 .menu {
     position: fixed;
