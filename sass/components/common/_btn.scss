@@ -24,4 +24,8 @@
     text-align: center;
     letter-spacing: 0.06em;
     color: var(--font-secondary);
+
+    @media screen and (max-width: $max-brp-sm) {
+        padding: 5px 20px;
+    }
 }

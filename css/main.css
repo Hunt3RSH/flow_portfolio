@@ -239,6 +239,12 @@ li {
   color: var(--font-secondary);
 }
 
+@media screen and (max-width: 479px) {
+  .hero-btn {
+    padding: 5px 20px;
+  }
+}
+
 .container {
   padding-left: 15px;
   padding-right: 15px;
