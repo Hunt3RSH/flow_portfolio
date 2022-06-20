@@ -53,17 +53,19 @@
                 </svg>
             </button>
             <div class="menu" id="menu" data-menu>
-                <ul class="menu-nav">
-                    <li>
-                        <a class="menu-text" href="./index.html">Студия</a>
-                    </li>
-                    <li>
-                        <a class="menu-text current-page" href="./portfolio.html">Портфолио</a>
-                    </li>
-                    <li>
-                        <a class="menu-text" href="#">Контакты</a>
-                    </li>
-                </ul>
+                <nav>
+                    <ul class="menu-nav">
+                        <li>
+                            <a class="menu-text current-page" href="./index.html">Студия</a>
+                        </li>
+                        <li>
+                            <a class="menu-text" href="./portfolio.html">Портфолио</a>
+                        </li>
+                        <li>
+                            <a class="menu-text" href="#contacts">Контакты</a>
+                        </li>
+                    </ul>
+                </nav>
                 <div>
                     <ul class="menu-contact">
                         <li>
@@ -79,16 +81,16 @@
                     </ul>
                     <ul class="menu-social">
                         <li>
-                            <a class="menu-social__link" href="https://www.instagram.com/">Instagram</a>
+                            <a class="menu-social__link" href="https://www.instagram.com/" target="_blank">Instagram</a>
                         </li>
                         <li>
-                            <a class="menu-social__link" href="https://twitter.com/">Twitter</a>
+                            <a class="menu-social__link" href="https://twitter.com/" target="_blank">Twitter</a>
                         </li>
                         <li>
-                            <a class="menu-social__link" href="https://www.facebook.com/">Facebook</a>
+                            <a class="menu-social__link" href="https://www.facebook.com/" target="_blank">Facebook</a>
                         </li>
                         <li>
-                            <a class="menu-social__link" href="https://www.linkedin.com/">LinkedIn</a>
+                            <a class="menu-social__link" href="https://www.linkedin.com/" target="_blank">LinkedIn</a>
                         </li>
                     </ul>
                 </div>
@@ -120,7 +122,27 @@
                 <li class="grid-item web">
                     <a class="product" href="#">
                         <div class="product-item">
-                            <img class="product-img" src="./images/product/product1.jpg" alt="Технокряк">
+                            <picture>
+                                <source
+                                  srcset="
+                                ./images/product/xl/product1x1.jpg 1x,
+                                ./images/product/xl/product1x2.jpg 2x
+                                  "
+                                  media="(min-width: 1200px)" />
+                                <source
+                                  srcset="
+                                  ./images/product/md/product1x1.jpg 1x,
+                                  ./images/product/md/product1x2.jpg 2x
+                                  "
+                                  media="(min-width: 768px)" />
+                                <source
+                                  srcset="
+                                  ./images/product/sm/produc1x1.jpg 1x,
+                                  ./images/product/sm/produc1x2.jpg 2x
+                                  "
+                                  media="(max-width: 767px)" />
+                                  <img class="product-img" src="./images/product/product1.jpg" alt="Технокряк">
+                            </picture>
                             <p class="product-img__title">Ресурс предлагает комплексные предложения с 
                             разным уровнем функционала и сервисов.
                             Все это позволит посетителю получить исчерпывающие
@@ -136,7 +158,27 @@
                 <li class="grid-item design">
                     <a class="product" href="#">
                         <div class="product-item">
-                            <img class="product-img" src="./images/product/product2.jpg" alt="Постер New Orlean vs Golden Star">
+                            <picture>
+                                <source
+                                  srcset="
+                                    ./images/product/xl/product2x1.jpg 1x,
+                                    ./images/product/xl/product2x2.jpg 2x
+                                  "
+                                  media="(min-width: 1200px)" />
+                                <source
+                                  srcset="
+                                    ./images/product/md/product2x1.jpg 1x,
+                                    ./images/product/md/product2x2.jpg 2x
+                                  "
+                                  media="(min-width: 768px)" />
+                                <source
+                                  srcset="
+                                    ./images/product/sm/product2x1.jpg 1x,
+                                    ./images/product/sm/product2x2.jpg 2x
+                                  "
+                                  media="(max-width: 767px)" />
+                                  <img class="product-img" src="./images/product/product2.jpg" alt="Постер New Orlean vs Golden Star">
+                            </picture>
                             <p class="product-img__title">Ресурс предлагает комплексные предложения с 
                             разным уровнем функционала и сервисов.
                             Все это позволит посетителю получить исчерпывающие
@@ -152,7 +194,27 @@
                 <li class="grid-item app">
                     <a class="product" href="#">
                         <div class="product-item">
-                            <img class="product-img" src="./images/product/product3.jpg" alt="Ресторан Seafood">
+                            <picture>
+                                <source
+                                  srcset="
+                                ./images/product/xl/product3x1.jpg 1x,
+                                ./images/product/xl/product3x2.jpg 2x
+                                  "
+                                  media="(min-width: 1200px)" />
+                                <source
+                                  srcset="
+                                  ./images/product/md/product3x1.jpg 1x,
+                                  ./images/product/md/product3x2.jpg 2x
+                                  "
+                                  media="(min-width: 768px)" />
+                                <source
+                                  srcset="
+                                  ./images/product/sm/product3x1.jpg 1x,
+                                  ./images/product/sm/product3x2.jpg 2x
+                                  "
+                                  media="(max-width: 767px)" />
+                                  <img class="product-img" src="./images/product/product3.jpg" alt="Ресторан Seafood">
+                            </picture>
                             <p class="product-img__title">Ресурс предлагает комплексные предложения с 
                             разным уровнем функционала и сервисов.
                             Все это позволит посетителю получить исчерпывающие
@@ -168,7 +230,27 @@
                 <li class="grid-item market">
                     <a class="product" href="#">
                         <div class="product-item">
-                            <img class="product-img" src="./images/product/product4.jpg" alt="Проект Prime">
+                            <picture>
+                                <source
+                                  srcset="
+                                ./images/product/xl/product4x1.jpg 1x,
+                                ./images/product/xl/product4x2.jpg 2x
+                                  "
+                                  media="(min-width: 1200px)" />
+                                <source
+                                  srcset="
+                                  ./images/product/md/product4x1.jpg 1x,
+                                  ./images/product/md/product4x2.jpg 2x
+                                  "
+                                  media="(min-width: 768px)" />
+                                <source
+                                  srcset="
+                                  ./images/product/sm/product4x1.jpg 1x,
+                                  ./images/product/sm/product4x2.jpg 2x
+                                  "
+                                  media="(max-width: 767px)" />
+                                  <img class="product-img" src="./images/product/product4.jpg" alt="Проект Prime">
+                            </picture>
                             <p class="product-img__title">Ресурс предлагает комплексные предложения с 
                             разным уровнем функционала и сервисов.
                             Все это позволит посетителю получить исчерпывающие
@@ -184,7 +266,27 @@
                 <li class="grid-item app">
                     <a class="product" href="#">
                         <div class="product-item">
-                            <img class="product-img" src="./images/product/product5.jpg" alt="Проект Boxes">
+                            <picture>
+                                <source
+                                  srcset="
+                                ./images/product/xl/product5x1.jpg 1x,
+                                ./images/product/xl/product5x2.jpg 2x
+                                  "
+                                  media="(min-width: 1200px)" />
+                                <source
+                                  srcset="
+                                  ./images/product/md/product5x1.jpg 1x,
+                                  ./images/product/md/product5x2.jpg 2x
+                                  "
+                                  media="(min-width: 768px)" />
+                                <source
+                                  srcset="
+                                  ./images/product/sm/product5x1.jpg 1x,
+                                  ./images/product/sm/product5x2.jpg 2x
+                                  "
+                                  media="(max-width: 767px)" />
+                                  <img class="product-img" src="./images/product/product5.jpg" alt="Проект Boxes">
+                            </picture>
                             <p class="product-img__title">Ресурс предлагает комплексные предложения с 
                             разным уровнем функционала и сервисов.
                             Все это позволит посетителю получить исчерпывающие
@@ -200,7 +302,27 @@
                 <li class="grid-item web">
                     <a class="product" href="#">
                         <div class="product-item">
-                            <img class="product-img" src="./images/product/product6.jpg" alt="Inspiration has no Borders">
+                            <picture>
+                                <source
+                                  srcset="
+                                ./images/product/xl/product6x1.jpg 1x,
+                                ./images/product/xl/product6x2.jpg 2x
+                                  "
+                                  media="(min-width: 1200px)" />
+                                <source
+                                  srcset="
+                                  ./images/product/md/product6x1.jpg 1x,
+                                  ./images/product/md/product6x2.jpg 2x
+                                  "
+                                  media="(min-width: 768px)" />
+                                <source
+                                  srcset="
+                                  ./images/product/sm/product6x1.jpg 1x,
+                                  ./images/product/sm/product6x2.jpg 2x
+                                  "
+                                  media="(max-width: 767px)" />
+                                  <img class="product-img" src="./images/product/product6.jpg" alt="Inspiration has no Borders">
+                            </picture>
                             <p class="product-img__title">Ресурс предлагает комплексные предложения с 
                             разным уровнем функционала и сервисов.
                             Все это позволит посетителю получить исчерпывающие
@@ -216,7 +338,27 @@
                 <li class="grid-item design">
                     <a class="product" href="#">
                         <div class="product-item">
-                            <img class="product-img" src="./images/product/product7.jpg" alt="Издание Limited Edition">
+                            <picture>
+                                <source
+                                  srcset="
+                                ./images/product/xl/product7x1.jpg 1x,
+                                ./images/product/xl/product7x2.jpg 2x
+                                  "
+                                  media="(min-width: 1200px)" />
+                                <source
+                                  srcset="
+                                  ./images/product/md/product7x1.jpg 1x,
+                                  ./images/product/md/product7x2.jpg 2x
+                                  "
+                                  media="(min-width: 768px)" />
+                                <source
+                                  srcset="
+                                  ./images/product/sm/product7x1.jpg 1x,
+                                  ./images/product/sm/product7x2.jpg 2x
+                                  "
+                                  media="(max-width: 767px)" />
+                                  <img class="product-img" src="./images/product/product7.jpg" alt="Издание Limited Edition">
+                            </picture>
                             <p class="product-img__title">Ресурс предлагает комплексные предложения с 
                             разным уровнем функционала и сервисов.
                             Все это позволит посетителю получить исчерпывающие
@@ -232,7 +374,27 @@
                 <li class="grid-item market">
                     <a class="product" href="#">
                         <div class="product-item">
-                            <img class="product-img" src="./images/product/product8.jpg" alt="Проект LAB">
+                            <picture>
+                                <source
+                                  srcset="
+                                ./images/product/xl/product8x1.jpg 1x,
+                                ./images/product/xl/product8x2.jpg 2x
+                                  "
+                                  media="(min-width: 1200px)" />
+                                <source
+                                  srcset="
+                                  ./images/product/md/product8x1.jpg 1x,
+                                  ./images/product/md/product8x2.jpg 2x
+                                  "
+                                  media="(min-width: 768px)" />
+                                <source
+                                  srcset="
+                                  ./images/product/sm/product8x1.jpg 1x,
+                                  ./images/product/sm/product8x2.jpg 2x
+                                  "
+                                  media="(max-width: 767px)" />
+                                  <img class="product-img" src="./images/product/product8.jpg" alt="Проект LAB">
+                            </picture>
                             <p class="product-img__title">Ресурс предлагает комплексные предложения с 
                             разным уровнем функционала и сервисов.
                             Все это позволит посетителю получить исчерпывающие
@@ -248,7 +410,27 @@
                 <li class="grid-item app">
                     <a class="product" href="#">
                         <div class="product-item">
-                            <img class="product-img" src="./images/product/product9.jpg" alt="Growing Business">
+                            <picture>
+                                <source
+                                  srcset="
+                                ./images/product/xl/product9x1.jpg 1x,
+                                ./images/product/xl/product9x2.jpg 2x
+                                  "
+                                  media="(min-width: 1200px)" />
+                                <source
+                                  srcset="
+                                  ./images/product/md/product9x1.jpg 1x,
+                                  ./images/product/md/product9x2.jpg 2x
+                                  "
+                                  media="(min-width: 768px)" />
+                                <source
+                                  srcset="
+                                  ./images/product/sm/product9x1.jpg 1x,
+                                  ./images/product/sm/product9x2.jpg 2x
+                                  "
+                                  media="(max-width: 767px)" />
+                                  <img class="product-img" src="./images/product/product9.jpg" alt="Growing Business">
+                            </picture>
                             <p class="product-img__title">Ресурс предлагает комплексные предложения с 
                             разным уровнем функционала и сервисов.
                             Все это позволит посетителю получить исчерпывающие

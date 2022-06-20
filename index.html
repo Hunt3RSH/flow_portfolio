@@ -53,17 +53,19 @@
                 </svg>
             </button>
             <div class="menu" id="menu" data-menu>
-                <ul class="menu-nav">
-                    <li>
-                        <a class="menu-text current-page" href="./index.html">Студия</a>
-                    </li>
-                    <li>
-                        <a class="menu-text" href="./portfolio.html">Портфолио</a>
-                    </li>
-                    <li>
-                        <a class="menu-text" href="#">Контакты</a>
-                    </li>
-                </ul>
+                <nav>
+                    <ul class="menu-nav">
+                        <li>
+                            <a class="menu-text current-page" href="./index.html">Студия</a>
+                        </li>
+                        <li>
+                            <a class="menu-text" href="./portfolio.html">Портфолио</a>
+                        </li>
+                        <li>
+                            <a class="menu-text" href="#contacts">Контакты</a>
+                        </li>
+                    </ul>
+                </nav>
                 <div>
                     <ul class="menu-contact">
                         <li>
@@ -79,16 +81,16 @@
                     </ul>
                     <ul class="menu-social">
                         <li>
-                            <a class="menu-social__link" href="https://www.instagram.com/">Instagram</a>
+                            <a class="menu-social__link" href="https://www.instagram.com/" target="_blank">Instagram</a>
                         </li>
                         <li>
-                            <a class="menu-social__link" href="https://twitter.com/">Twitter</a>
+                            <a class="menu-social__link" href="https://twitter.com/" target="_blank">Twitter</a>
                         </li>
                         <li>
-                            <a class="menu-social__link" href="https://www.facebook.com/">Facebook</a>
+                            <a class="menu-social__link" href="https://www.facebook.com/" target="_blank">Facebook</a>
                         </li>
                         <li>
-                            <a class="menu-social__link" href="https://www.linkedin.com/">LinkedIn</a>
+                            <a class="menu-social__link" href="https://www.linkedin.com/" target="_blank">LinkedIn</a>
                         </li>
                     </ul>
                 </div>
@@ -155,15 +157,39 @@
             <h2 class="section-title">Чем мы занимаемся</h2>
             <ul class="kind">
                 <li class="kind-box">
-                    <img class="kind-box__img" src="./images/box1.jpg" alt="Десктопные приложения" width="370">
+                    <picture>
+                        <source
+                          srcset="
+                            ./images/box/box1.jpg 1x,
+                            ./images/box/box1x2.jpg 2x
+                          "
+                          media="(min-width: 1200px)" />
+                          <img class="kind-box__img" src="./images/box/box1.jpg" alt="Десктопные приложения">
+                        </picture>
                     <p class="kind-box__title">Десктопные приложения</p>
                 </li>
                 <li class="kind-box">
-                    <img class="kind-box__img" src="./images/box2.jpg" alt="Мобильные приложения" width="370">
+                    <picture>
+                        <source
+                          srcset="
+                            ./images/box/box2.jpg 1x,
+                            ./images/box/box2x2.jpg 2x
+                          "
+                          media="(min-width: 1200px)" />
+                          <img class="kind-box__img" src="./images/box/box2.jpg" alt="Мобильные приложения">
+                        </picture>
                     <p class="kind-box__title">Мобильные приложения</p>
                 </li>
                 <li class="kind-box">
-                    <img class="kind-box__img" src="./images/box3.jpg" alt="Дизайнерские решения" width="370">
+                    <picture>
+                        <source
+                          srcset="
+                            ./images/box/box3.jpg 1x,
+                            ./images/box/box3x2.jpg 2x
+                          "
+                          media="(min-width: 1200px)" />
+                          <img class="kind-box__img" src="./images/box/box3.jpg" alt="Дизайнерские решения">
+                        </picture>
                     <p class="kind-box__title">Дизайнерские решения</p>
                 </li>
             </ul>

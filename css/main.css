@@ -1077,6 +1077,7 @@ li {
 
 .kind-box__img {
   display: block;
+  width: 100%;
 }
 
 .kind-box__title {
@@ -2187,7 +2188,6 @@ li {
   margin-top: 0;
   font-style: normal;
   font-weight: 700;
-  font-size: 120px;
   line-height: 1.166;
   text-align: center;
   margin-bottom: 50px;
@@ -2195,6 +2195,25 @@ li {
   color: var(--font-main);
   position: relative;
   overflow: hidden;
+  text-align: center;
+}
+
+@media screen and (max-width: 479px) {
+  .policy-ty {
+    font-size: 35px;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .policy-ty {
+    font-size: 80px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .policy-ty {
+    font-size: 120px;
+  }
 }
 
 .warning-title {

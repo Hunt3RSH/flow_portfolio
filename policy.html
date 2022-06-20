@@ -46,6 +46,55 @@
                     </a>
                 </li>
             </ul>
+            <button class="menu-btn" type="button" aria-expanded="false" aria-controls="menu" data-menu-button>
+                <svg width="24" height="24" aria-label="мобильное меню">
+                    <use class="menu-btn__open" href="./images/icons.svg#icon-menu"></use>
+                    <use class="menu-btn__close" href="./images/icons.svg#icon-close"></use>
+                </svg>
+            </button>
+            <div class="menu" id="menu" data-menu>
+                <nav>
+                    <ul class="menu-nav">
+                        <li>
+                            <a class="menu-text current-page" href="./index.html">Студия</a>
+                        </li>
+                        <li>
+                            <a class="menu-text" href="./portfolio.html">Портфолио</a>
+                        </li>
+                        <li>
+                            <a class="menu-text" href="#contacts">Контакты</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div>
+                    <ul class="menu-contact">
+                        <li>
+                            <a class="contacts-menu__nomber" href="tel:+380961111111">
+                                +38 096 111 11 11
+                            </a>
+                        </li>
+                        <li>
+                            <a class="contacts-menu" href="mailtoo:info@devstudio.com">
+                                info@devstudio.com
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="menu-social">
+                        <li>
+                            <a class="menu-social__link" href="https://www.instagram.com/" target="_blank">Instagram</a>
+                        </li>
+                        <li>
+                            <a class="menu-social__link" href="https://twitter.com/" target="_blank">Twitter</a>
+                        </li>
+                        <li>
+                            <a class="menu-social__link" href="https://www.facebook.com/" target="_blank">Facebook</a>
+                        </li>
+                        <li>
+                            <a class="menu-social__link" href="https://www.linkedin.com/" target="_blank">LinkedIn</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </header>
     <main>
@@ -257,8 +306,8 @@
                     </button>
                 </div>
             </form>
-
         </div>
     </footer>
+    <script src="./scripts/menu.js"></script>
 </body>
 </html>
