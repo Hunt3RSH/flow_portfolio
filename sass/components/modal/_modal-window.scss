@@ -60,6 +60,10 @@
         margin:0 15px;
         width: 100%;
     }
+    @media screen and (max-width: $max-brp-xl) {
+        top: 0;
+        transform: translatey(20%);
+    }
 
     @media screen and (min-width: $min-brp-sm)
     and (max-width: $max-brp-xl) {
@@ -69,6 +73,7 @@
     @media screen and (min-width: $min-brp-xl) {
         width: 528px;
     }
+
 
 }
 .btn-close {

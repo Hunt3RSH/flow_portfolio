@@ -41,6 +41,9 @@
     color:var(--font-main);
     letter-spacing: 0.03em;
     text-transform: uppercase;
+    @media screen and (max-width: $max-brp-md) {
+        text-align: center;
+    }
 }
 .feature-info__subtitle {
     margin-top: 10px;

@@ -20,7 +20,7 @@
         rgba(47,48,58,0.4)),
         url(../images/hero/sm/header1x.jpg);
         object-fit:contain;
-        max-width: 480px;
+        width: 100%;
 
         @media screen and (min-width: $min-brp-sm) 
         and (max-width: $max-brp-md),
@@ -33,7 +33,7 @@
             url(../images/hero/sm/header2x.jpg);
             object-fit:contain;
             background-size: cover;
-            max-width: 480px;
+            width: 100%;
         }
     }
     // 768
@@ -44,7 +44,7 @@
         rgba(47,48,58,0.4)),
         url(../images/hero/md/header1x.jpg);
         object-fit:contain;
-        max-width: 768px;
+        width: 100%;
 
 
         @media screen and (min-width: $min-brp-md) 
@@ -58,7 +58,7 @@
             url(../images/hero/md/header2x.jpg);
             object-fit:contain;
             background-size: cover;
-            max-width: 768px;
+            width: 100%;
         }
     }
 

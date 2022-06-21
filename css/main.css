@@ -909,7 +909,7 @@ li {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/sm/header1x.jpg);
     -o-object-fit: contain;
        object-fit: contain;
-    max-width: 480px;
+    width: 100%;
   }
 }
 
@@ -920,7 +920,7 @@ li {
     -o-object-fit: contain;
        object-fit: contain;
     background-size: cover;
-    max-width: 480px;
+    width: 100%;
   }
 }
 
@@ -930,7 +930,7 @@ li {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/md/header1x.jpg);
     -o-object-fit: contain;
        object-fit: contain;
-    max-width: 768px;
+    width: 100%;
   }
 }
 
@@ -941,7 +941,7 @@ li {
     -o-object-fit: contain;
        object-fit: contain;
     background-size: cover;
-    max-width: 768px;
+    width: 100%;
   }
 }
 
@@ -1076,6 +1076,12 @@ li {
   color: var(--font-main);
   letter-spacing: 0.03em;
   text-transform: uppercase;
+}
+
+@media screen and (max-width: 767px) {
+  .feature-info__title {
+    text-align: center;
+  }
 }
 
 .feature-info__subtitle {
@@ -1851,6 +1857,14 @@ li {
   }
 }
 
+@media screen and (max-width: 1199px) {
+  .modal-window {
+    top: 0;
+    -webkit-transform: translatey(20%);
+            transform: translatey(20%);
+  }
+}
+
 @media screen and (min-width: 480px) and (max-width: 1199px) {
   .modal-window {
     width: 450px;
@@ -1970,13 +1984,11 @@ li {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin-left: -15px;
-  margin-right: -15px;
+  gap: 30px;
   margin-top: 0;
 }
 
 .grid-item {
-  overflow: hidden;
   -webkit-transition-duration: 500ms;
           transition-duration: 500ms;
 }
@@ -1990,7 +2002,7 @@ li {
 .product {
   overflow: hidden;
   display: block;
-  margin: 15px;
+  height: 100%;
   -webkit-transition-property: -webkit-box-shadow;
   transition-property: -webkit-box-shadow;
   transition-property: box-shadow;
@@ -2008,6 +2020,12 @@ li {
   -webkit-transform: translateY(-100%);
           transform: translateY(-100%);
   opacity: 1;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .product {
+    width: 354px;
+  }
 }
 
 .product-item {
@@ -2077,6 +2095,7 @@ li {
   background: var(--font-secondary);
   border: 1px solid var(--border);
   border-top: none;
+  height: 100%;
 }
 
 .product-name {
@@ -2086,6 +2105,12 @@ li {
   letter-spacing: 0.03em;
   color: var(--font-main);
   margin-bottom: 4px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .product-name {
+    letter-spacing: 0.06em;
+  }
 }
 
 .product-info {
@@ -2130,6 +2155,7 @@ li {
           animation-duration: 0.5s;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
+  display: none;
 }
 
 @-webkit-keyframes hide {
