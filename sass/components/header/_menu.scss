@@ -76,6 +76,9 @@
             display: none;
         }
     }
+    @media screen and (max-width: $max-brp-sm) {
+        padding: 22px 20px 22px 20px;
+    }
 }
 
 .menu-nav {
@@ -83,9 +86,6 @@
     flex-direction: column;
     align-items: flex-start;
     gap: 32px;
-    li {
-        width: 100%;
-    }
 }
 .menu-contact {
     display: flex;
@@ -93,6 +93,9 @@
     align-items: flex-start;
     gap: 32px;
     margin-bottom: 64px;
+    @media screen and (max-width: $max-brp-sm){
+        margin-bottom: 32px;
+    }
 }
 .menu-social {
     display: flex;
@@ -108,7 +111,7 @@
     li:after {
         content: "";
         height: 100%;
-        border: 1px solid rgba(33, 33, 33, 0.2);
+        border-right: 1px solid rgba(33, 33, 33, 0.2);
     }
     li:last-child:after {
         border: none;
@@ -116,7 +119,7 @@
 }
 .menu-social__link {
     @media screen and (max-width: $max-brp-sm) {
-        font-size: 14px;
+        font-size: 13px;
     }
     @media screen and (min-width: $min-brp-sm) {
         font-size: 18px;
@@ -129,7 +132,6 @@
     text-align: center;
     letter-spacing: 0.02em;
     color: $font-main;
-    width: 100%;
 
     transition-property: color;
     @extend %animation;
@@ -151,19 +153,13 @@
     letter-spacing: 0.02em;
     color: $font-main-light;
 
-    &__nomber {
-        font-weight: 500;
-        line-height: 1.17;
-        letter-spacing: 0.02em;
+    transition-property: color;
+    @extend %animation;
+    
+    &:hover,
+    &:focus {
         color: $hover;
-        @media screen and (max-width: $max-brp-sm) {
-            font-size: 20px;
-        }
-        @media screen and (min-width: $min-brp-sm) {
-            font-size: 34px;
-        }
     }
-
     @media screen and (max-width: $max-brp-sm) {
         font-size: 20px;
     }

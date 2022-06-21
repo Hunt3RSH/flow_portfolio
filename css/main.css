@@ -1,4 +1,4 @@
-.button, .social_btn_footer, .nav_text, .contacts_nom, .contact_icon, .menu-btn .menu-btn__close, .menu-btn svg, .menu-btn__open, .menu, .menu.is-open, .menu-text, .social_btn, .parthners-group__item, .form-field svg, .form-field__input, .checkbox-check, .checkbox-box, .modal, .modal-window, .btn-close svg, .pbuttons, .grid-item, .product, .product-item, .product-img__title {
+.button, .social_btn_footer, .nav_text, .contacts_nom, .contact_icon, .menu-btn .menu-btn__close, .menu-btn svg, .menu-btn__open, .menu, .menu.is-open, .menu-text, .contacts-menu, .social_btn, .parthners-group__item, .form-field svg, .form-field__input, .checkbox-check, .checkbox-box, .modal, .modal-window, .btn-close svg, .pbuttons, .grid-item, .product, .product-item, .product-img__title {
   -webkit-transition-duration: 250ms;
           transition-duration: 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -725,6 +725,12 @@ li {
   }
 }
 
+@media screen and (max-width: 479px) {
+  .menu {
+    padding: 22px 20px 22px 20px;
+  }
+}
+
 .menu-nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -737,10 +743,6 @@ li {
       -ms-flex-align: start;
           align-items: flex-start;
   gap: 32px;
-}
-
-.menu-nav li {
-  width: 100%;
 }
 
 .menu-contact {
@@ -756,6 +758,12 @@ li {
           align-items: flex-start;
   gap: 32px;
   margin-bottom: 64px;
+}
+
+@media screen and (max-width: 479px) {
+  .menu-contact {
+    margin-bottom: 32px;
+  }
 }
 
 .menu-social {
@@ -778,7 +786,7 @@ li {
 .menu-social li:after {
   content: "";
   height: 100%;
-  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
 }
 
 .menu-social li:last-child:after {
@@ -787,7 +795,7 @@ li {
 
 @media screen and (max-width: 479px) {
   .menu-social__link {
-    font-size: 14px;
+    font-size: 13px;
   }
 }
 
@@ -806,7 +814,6 @@ li {
   text-align: center;
   letter-spacing: 0.02em;
   color: #212121;
-  width: 100%;
   -webkit-transition-property: color;
   transition-property: color;
 }
@@ -832,25 +839,12 @@ li {
   line-height: 1.17;
   letter-spacing: 0.02em;
   color: #757575;
+  -webkit-transition-property: color;
+  transition-property: color;
 }
 
-.contacts-menu__nomber {
-  font-weight: 500;
-  line-height: 1.17;
-  letter-spacing: 0.02em;
+.contacts-menu:hover, .contacts-menu:focus {
   color: #2196F3;
-}
-
-@media screen and (max-width: 479px) {
-  .contacts-menu__nomber {
-    font-size: 20px;
-  }
-}
-
-@media screen and (min-width: 480px) {
-  .contacts-menu__nomber {
-    font-size: 34px;
-  }
 }
 
 @media screen and (max-width: 479px) {
@@ -897,73 +891,51 @@ li {
 }
 
 .hero-bg {
-  margin: 0 auto;
   background: var(--background-color);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero/sm/header1xsm.jpg);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/sm/header1xsm.jpg);
+  -o-object-fit: contain;
+     object-fit: contain;
   background-repeat: no-repeat;
   background-position: 50% 50%;
+  background-size: cover;
+  margin-inline: auto;
 }
 
-@media screen and (max-width: 767px) {
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
   .hero-bg {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero/sm/header1x.jpg);
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/sm/header1x.jpg);
-    -o-object-fit: contain;
-       object-fit: contain;
-    width: 100%;
-  }
-}
-
-@media screen and (max-width: 767px) and (min-width: 480px) and (max-width: 767px), screen and (max-width: 767px) and (min-device-pixel-ratio: 2), screen and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), screen and (max-width: 767px) and (min-resolution: 192dpi), screen and (max-width: 767px) and (min-resolution: 2dppx) {
-  .hero-bg {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero/sm/header2x.jpg);
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/sm/header2x.jpg);
-    -o-object-fit: contain;
-       object-fit: contain;
-    background-size: cover;
-    width: 100%;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero/sm/header2xsm.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/sm/header2xsm.jpg);
   }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .hero-bg {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero/md/header1x.jpg);
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/md/header1x.jpg);
-    -o-object-fit: contain;
-       object-fit: contain;
-    width: 100%;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero/md/header1xmd.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/md/header1xmd.jpg);
+    max-width: 1600px;
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1199px) and (min-width: 768px) and (max-width: 1199px), screen and (min-width: 768px) and (max-width: 1199px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (max-width: 1199px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (max-width: 1199px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (max-width: 1199px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 768px) and (max-width: 1199px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (max-width: 1199px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (max-width: 1199px) and (min-resolution: 2dppx) {
   .hero-bg {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero/md/header2x.jpg);
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/md/header2x.jpg);
-    -o-object-fit: contain;
-       object-fit: contain;
-    background-size: cover;
-    width: 100%;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero/md/header2xmd.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/md/header2xmd.jpg);
   }
 }
 
 @media screen and (min-width: 1200px) {
   .hero-bg {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero/xl/header1x.jpg);
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/xl/header1x.jpg);
-    -o-object-fit: contain;
-       object-fit: contain;
-    background-size: cover;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero/xl/header1xxl.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/xl/header1xxl.jpg);
     max-width: 1600px;
   }
 }
 
-@media screen and (min-width: 1200px) and (min-width: 1200px), screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .hero-bg {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero/xl/header2x.jpg);
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/xl/header2x.jpg);
-    -o-object-fit: contain;
-       object-fit: contain;
-    background-size: cover;
-    max-width: 1600px;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero/xl/header2xxl.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/xl/header2xxl.jpg);
   }
 }
 
@@ -1182,6 +1154,12 @@ li {
 .card-img {
   width: 100%;
   display: block;
+}
+
+@media screen and (min-width: 1200px) {
+  .card-img {
+    width: 270px;
+  }
 }
 
 .card-description {
@@ -1857,14 +1835,6 @@ li {
   }
 }
 
-@media screen and (max-width: 1199px) {
-  .modal-window {
-    top: 0;
-    -webkit-transform: translatey(20%);
-            transform: translatey(20%);
-  }
-}
-
 @media screen and (min-width: 480px) and (max-width: 1199px) {
   .modal-window {
     width: 450px;
@@ -1874,6 +1844,14 @@ li {
 @media screen and (min-width: 1200px) {
   .modal-window {
     width: 528px;
+  }
+}
+
+@media screen and (max-height: 767px) {
+  .modal-window {
+    top: 0%;
+    -webkit-transform: translate(0, 20%);
+            transform: translate(0, 20%);
   }
 }
 
@@ -1972,10 +1950,6 @@ li {
   border-radius: 4px;
 }
 
-.products {
-  gap: 30px;
-}
-
 .grid {
   list-style: none;
   padding: 0;
@@ -1985,6 +1959,7 @@ li {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   margin-top: 0;
+  gap: 30px;
 }
 
 .grid-item {
@@ -2000,7 +1975,13 @@ li {
 
 .product {
   overflow: hidden;
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   height: 100%;
   -webkit-transition-property: -webkit-box-shadow;
   transition-property: -webkit-box-shadow;
@@ -2038,18 +2019,7 @@ li {
 
 .product-img {
   display: block;
-}
-
-@media screen and (max-width: 767px) {
-  .product-img {
-    width: 100%;
-  }
-}
-
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .product-img {
-    width: 354px;
-  }
+  width: 100%;
 }
 
 .product-img__title {
@@ -2079,7 +2049,8 @@ li {
 
 @media screen and (max-width: 767px) {
   .product-img__title {
-    font-size: 15px;
+    padding: 15px;
+    font-size: 14px;
   }
 }
 
@@ -2087,16 +2058,6 @@ li {
   .product-img__title {
     font-size: 18px;
   }
-}
-
-.border {
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
-  padding: 20px 24px;
-  background: var(--font-secondary);
-  border: 1px solid var(--border);
-  border-top: none;
 }
 
 .product-name {
@@ -2120,6 +2081,16 @@ li {
   line-height: 1.88;
   letter-spacing: 0.03em;
   color: var(--font-main-light);
+}
+
+.border {
+  padding: 20px 24px;
+  background: var(--font-secondary);
+  border: 1px solid var(--border);
+  border-top: none;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
 }
 
 .web {
