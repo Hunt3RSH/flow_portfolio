@@ -1,10 +1,9 @@
-
 // utils
 @import "./utils/placeholders";
 @import "./utils/variables";
 @import "./utils/brakepoint";
 
-// common 
+// common
 @import "./base/body";
 @import "./base/extras";
 @import "./components/common/logo";
@@ -30,5 +29,5 @@
 // portfolio
 @import "./components/portfolio/btn-filter";
 @import "./components/portfolio/grid-card";
-// policy 
+// policy
 @import "./components/section/policy";
