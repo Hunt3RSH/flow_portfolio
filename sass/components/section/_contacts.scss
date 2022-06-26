@@ -1,5 +1,7 @@
 .main-wrapper {
-	margin-top: 170px;
+	@media screen and (min-width: $min-brp-xl) {
+		margin-top: 170px;
+	}
 }
 .section {
 	padding-top: 58px;
@@ -7,11 +9,37 @@
 }
 .section-wrapper {
 	display: flex;
-	justify-content: space-between;
+	@media screen and (max-width: $max-brp-md) {
+		flex-direction: column;
+	}
+	@media screen and (min-width: $min-brp-md) and (max-width: $max-brp-xl) {
+		flex-direction: column;
+	}
+	@media screen and (min-width: $min-brp-xl) {
+		justify-content: space-between;
+	}
+}
+.contacts-wrapper {
+	@media screen and (max-width: $max-brp-md) {
+		margin-bottom: 40px;
+	}
+	@media screen and (min-width: $min-brp-md) and (max-width: $max-brp-xl) {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+	@media screen and (min-width: $min-brp-xl) {
+		flex-direction: column;
+	}
 }
 .logo-contact {
+	display: block;
 	background-color: $background-light;
 	border-radius: 50%;
+	margin: 0;
+	@media screen and (max-width: $max-brp-md) {
+		margin: 0 auto;
+	}
 }
 .social-title {
 	font-weight: 400;
@@ -19,10 +47,15 @@
 	line-height: 160%;
 	margin-top: 56px;
 	color: $font-main;
+	font-size: 18px;
+	@media screen and (max-width: $max-brp-md) {
+		display: flex;
+		justify-content: center;
+	}
 }
 .contacts-link {
 	font-weight: 400;
-	font-size: 27px;
+	// font-size: 27px;
 	line-height: 140%;
 	margin-top: 8px;
 	color: $background-color;
@@ -32,5 +65,14 @@
 	&:hover,
 	&:focus {
 		color: $hover;
+	}
+	@media screen and (max-width: $max-brp-md) {
+		font-size: 17px;
+	}
+	@media screen and (min-width: $min-brp-md) and (max-width: $max-brp-xl) {
+		font-size: 22px;
+	}
+	@media screen and (min-width: $min-brp-xl) {
+		font-size: 27px;
 	}
 }

@@ -10,6 +10,10 @@
 			href="https://fonts.googleapis.com/css2?family=Inter&family=Quantico:wght@400;700&display=swap"
 			rel="stylesheet"
 		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+		/>
 		<link rel="stylesheet" href="./css/main.min.css" />
 		<title>WebStudio</title>
 		<link rel="icon" href="./images/favicon.png" />
@@ -33,59 +37,20 @@
 							</li>
 						</ul>
 					</nav>
-					<button class="menu-btn" type="button" aria-expanded="false" aria-controls="menu" data-menu-button>
-						<svg width="24" height="24" aria-label="мобильное меню">
-							<use class="menu-btn__open" href="./images/icons.svg#icon-menu"></use>
-							<use class="menu-btn__close" href="./images/icons.svg#icon-close"></use>
+					<button class="menu-btn" type="button" aria-expanded="false" aria-controls="menu" data-open-menu>
+						<svg width="24" height="24" aria-label="mobile menu">
+							<use href="./images/icons.svg#icon-menu"></use>
 						</svg>
+						<span class="menu-info">Menu</span>
 					</button>
-					<div class="menu" id="menu" data-menu>
-						<nav>
-							<ul class="menu-nav">
-								<li>
-									<a class="menu-text current-page" href="./index.html">Студия</a>
-								</li>
-								<li>
-									<a class="menu-text" href="./portfolio.html">Портфолио</a>
-								</li>
-								<li>
-									<a class="menu-text" href="#contacts">Контакты</a>
-								</li>
-							</ul>
-						</nav>
-						<div>
-							<ul class="menu-contact">
-								<li>
-									<a class="contacts-menu" href="tel:+380961111111">+38 096 111 11 11</a>
-								</li>
-								<li>
-									<a class="contacts-menu" href="mailtoo:info@devstudio.com">info@devstudio.com</a>
-								</li>
-							</ul>
-							<ul class="menu-social">
-								<li>
-									<a class="menu-social__link" href="https://www.instagram.com/" target="_blank">Instagram</a>
-								</li>
-								<li>
-									<a class="menu-social__link" href="https://twitter.com/" target="_blank">Twitter</a>
-								</li>
-								<li>
-									<a class="menu-social__link" href="https://www.facebook.com/" target="_blank">Facebook</a>
-								</li>
-								<li>
-									<a class="menu-social__link" href="https://www.linkedin.com/" target="_blank">LinkedIn</a>
-								</li>
-							</ul>
-						</div>
-					</div>
 				</div>
 			</div>
 		</header>
 		<main>
 			<!-- hero -->
 			<section class="hero-bg">
-				<div class="hero">
-					<h1 class="hero-title">HTML&CSS Developer</h1>
+				<div class="hero container">
+					<h1 class="hero-title">Full Stack Developer</h1>
 				</div>
 			</section>
 			<!-- About -->
@@ -93,33 +58,37 @@
 				<div class="container about-wrapper">
 					<h2 class="title">About</h2>
 					<p class="about-subtitle">
-						worked for the last 5 years in the field of "people" service, worked as a courier and salesman, for these 5
-						many useful skills in self-developed, at the moment, beginning to learn HTML&CSS and "vanilla" JS. my
-						hobbies are Photoshop, music, computer technology, game.
+						Hello
+						<br />
+						my name is Volodymyr Shamrai.
+						<br />
+						Worked for the last 5 years in the field of "people" service, worked as a courier and salesman, for these 5
+						years took for himself many useful skills in self-developed, at the moment, beginning to learn HTML&CSS and
+						"vanilla" JS. my hobbies are Photoshop, music, computer technology, game.
 					</p>
 				</div>
 			</section>
 			<!-- Recent Work -->
 			<section id="work">
 				<div class="container recent-wrapper">
-					<h2 class="title">Recent Work</h2>
+					<h2 class="title">Project</h2>
 					<ul class="work">
 						<li class="work-item">
 							<div class="work-wrapper">
-								<h3 class="work-wrapper__title">Decodable.co</h3>
+								<h3 class="work-wrapper__title">WebStudio</h3>
 								<ul class="work-type">
 									<li>
-										<p class="work-type__title">Brand Design</p>
+										<p class="work-type__title">HTML</p>
 									</li>
 									<li>
-										<p class="work-type__title">Webflow Development</p>
+										<p class="work-type__title">SCSS</p>
 									</li>
 									<li>
-										<p class="work-type__title">Web Design</p>
+										<p class="work-type__title">JS</p>
 									</li>
 								</ul>
 							</div>
-							<a class="btn-work" href="Decodable.co">
+							<a class="btn-work" href="https://hunt3rsh.github.io/goit-markup-hw-08/" target="_blank">
 								<svg width="80" height="80">
 									<use href="./images/icon.svg#icon-arrow"></use>
 								</svg>
@@ -127,42 +96,29 @@
 						</li>
 						<li class="work-item">
 							<div class="work-wrapper">
-								<h3 class="work-wrapper__title">Decodable.co</h3>
+								<h3 class="work-wrapper__title">Unknow Team Project</h3>
 								<ul class="work-type">
 									<li>
-										<p class="work-type__title">Brand Design</p>
-									</li>
-									<li>
-										<p class="work-type__title">Webflow Development</p>
-									</li>
-									<li>
-										<p class="work-type__title">Web Design</p>
+										<p class="work-type__title">Soon</p>
 									</li>
 								</ul>
 							</div>
-							<a class="btn-work" href="Decodable.co">
+							<a class="btn-work" href="#">
 								<svg width="80" height="80">
 									<use href="./images/icon.svg#icon-arrow"></use>
 								</svg>
 							</a>
 						</li>
-
 						<li class="work-item">
 							<div class="work-wrapper">
-								<h3 class="work-wrapper__title">Decodable.co</h3>
+								<h3 class="work-wrapper__title">Unknow JS Project</h3>
 								<ul class="work-type">
 									<li>
-										<p class="work-type__title">Brand Design</p>
-									</li>
-									<li>
-										<p class="work-type__title">Webflow Development</p>
-									</li>
-									<li>
-										<p class="work-type__title">Web Design</p>
+										<p class="work-type__title">Soon</p>
 									</li>
 								</ul>
 							</div>
-							<a class="btn-work" href="Decodable.co">
+							<a class="btn-work" href="#">
 								<svg width="80" height="80">
 									<use href="./images/icon.svg#icon-arrow"></use>
 								</svg>
@@ -172,7 +128,7 @@
 				</div>
 			</section>
 		</main>
-		<!-- footer form -->
+		<!-- footer -->
 		<footer class="bg_footer">
 			<div class="container baseline">
 				<div class="baseline-wrapper">
@@ -190,16 +146,16 @@
 					<span class="coppy">Build with 💖 by Hunt3R</span>
 					<ul class="social">
 						<li>
-							<a class="social-link" href="#">link</a>
+							<a class="social-link" href="https://www.instagram.com/hunt3r_npc" target="_blank">Instagram</a>
 						</li>
 						<li>
-							<a class="social-link" href="#">link</a>
+							<a class="social-link" href="https://www.facebook.com/Fin4H.TNT/" target="_blank">facebook</a>
 						</li>
 						<li>
-							<a class="social-link" href="#">link</a>
+							<a class="social-link" href="https://github.com/Hunt3RSH" target="_blank">GitHub</a>
 						</li>
 						<li>
-							<a class="social-link" href="#">link</a>
+							<a class="social-link" href="https://steamcommunity.com/id/Hunt3R_wise/" target="_blank">Steam</a>
 						</li>
 					</ul>
 				</div>
@@ -207,66 +163,47 @@
 		</footer>
 		<div class="modal is-hidden" data-backdrop>
 			<div class="modal-window">
-				<button class="btn-close" data-close-modal>
-					<svg width="10" height="10">
+				<button class="btn-close" data-close-menu>
+					<svg width="40" height="40">
 						<use href="./images/icons.svg#icon-close"></use>
 					</svg>
 				</button>
-
-				<form class="form js-speaker-form">
-					<h2 class="form-title">Оставьте свои данные, мы вам перезвоним</h2>
-					<div class="form-field">
-						<input class="form-field__input" type="text" name="name" id="name" autofocus autocomplete="name" />
-						<label class="form-field__label" for="name">Имя</label>
-						<svg width="18" height="18">
-							<use href="./images/icons.svg#icon-person-black"></use>
-						</svg>
+				<div class="menu" id="menu" data-open-menu>
+					<nav>
+						<ul class="menu-nav">
+							<li>
+								<a class="menu-text current-page" href="./index.html">Home</a>
+							</li>
+							<li>
+								<a class="menu-text" href="#about">About</a>
+							</li>
+							<li>
+								<a class="menu-text" href="#work">Work</a>
+							</li>
+							<li>
+								<a class="menu-text" href="./contacts.html#contacts">Contact</a>
+							</li>
+						</ul>
+					</nav>
+					<div>
+						<ul class="menu-social">
+							<li>
+								<a class="menu-social__link" href="https://www.instagram.com/hunt3r_npc" target="_blank">Instagram</a>
+							</li>
+							<li>
+								<a class="menu-social__link" href="https://www.facebook.com/Fin4H.TNT/" target="_blank">facebook</a>
+							</li>
+							<li>
+								<a class="menu-social__link" href="https://github.com/Hunt3RSH" target="_blank">GitHub</a>
+							</li>
+							<li>
+								<a class="menu-social__link" href="https://steamcommunity.com/id/Hunt3R_wise/" target="_blank">Steam</a>
+							</li>
+						</ul>
 					</div>
-
-					<div class="form-field">
-						<input class="form-field__input" type="tel" name="tel" id="tel" autocomplete="tel" />
-						<label class="form-field__label" for="tel">Телефон</label>
-						<svg width="18" height="18">
-							<use href="./images/icons.svg#icon-phone-black"></use>
-						</svg>
-					</div>
-
-					<div class="form-field">
-						<input class="form-field__input" type="email" name="email" required id="mail" autocomplete="email" />
-						<label class="form-field__label" for="mail">Почта</label>
-						<svg width="18" height="18">
-							<use href="./images/icons.svg#icon-email-black"></use>
-						</svg>
-					</div>
-
-					<div class="form-textarea">
-						<textarea autocomplete="off" name="comment" id="comment" placeholder="Введите текст"></textarea>
-						<label class="form-field__label" for="comment">Комментарий</label>
-					</div>
-
-					<div class="form-submit">
-						<label class="form-submit_label">
-							<input class="checkbox" type="checkbox" name="policy" />
-							<svg class="checkbox-check" width="16" height="15">
-								<use href="./images/icons.svg#icon-check"></use>
-							</svg>
-							<svg class="checkbox-box" width="16" height="15">
-								<use href="./images/icons.svg#icon-check-box"></use>
-							</svg>
-							<span>
-								Соглашаюсь с рассылкой и принимаю
-								<a class="checkbox-policy" href="./policy.html" target="_blank">Условия договора</a>
-							</span>
-						</label>
-
-						<button class="form-submit__btn button" type="submit">
-							<span class="form-submit__text">Отправить</span>
-						</button>
-					</div>
-				</form>
+				</div>
 			</div>
 		</div>
-		<script src="./scripts/menu.js"></script>
-		<!-- <script src="./scripts/modal.js"></script> -->
+		<script src="./scripts/modal.js"></script>
 	</body>
 </html>

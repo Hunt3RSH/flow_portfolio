@@ -10,6 +10,10 @@
 			href="https://fonts.googleapis.com/css2?family=Inter&family=Quantico:wght@400;700&display=swap"
 			rel="stylesheet"
 		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+		/>
 		<link rel="stylesheet" href="./css/main.min.css" />
 		<title>WebStudio</title>
 		<link rel="icon" href="./images/favicon.png" />
@@ -33,83 +37,48 @@
 							</li>
 						</ul>
 					</nav>
-					<button class="menu-btn" type="button" aria-expanded="false" aria-controls="menu" data-menu-button>
-						<svg width="24" height="24" aria-label="мобильное меню">
-							<use class="menu-btn__open" href="./images/icons.svg#icon-menu"></use>
-							<use class="menu-btn__close" href="./images/icons.svg#icon-close"></use>
+					<button class="menu-btn" type="button" aria-expanded="false" aria-controls="menu" data-open-menu>
+						<svg width="24" height="24" aria-label="mobile menu">
+							<use href="./images/icons.svg#icon-menu"></use>
 						</svg>
+						<span class="menu-info">Menu</span>
 					</button>
-					<div class="menu" id="menu" data-menu>
-						<nav>
-							<ul class="menu-nav">
-								<li>
-									<a class="menu-text current-page" href="./index.html">Студия</a>
-								</li>
-								<li>
-									<a class="menu-text" href="./portfolio.html">Портфолио</a>
-								</li>
-								<li>
-									<a class="menu-text" href="#contacts">Контакты</a>
-								</li>
-							</ul>
-						</nav>
-						<div>
-							<ul class="menu-contact">
-								<li>
-									<a class="contacts-menu" href="tel:+380961111111">+38 096 111 11 11</a>
-								</li>
-								<li>
-									<a class="contacts-menu" href="mailtoo:info@devstudio.com">info@devstudio.com</a>
-								</li>
-							</ul>
-							<ul class="menu-social">
-								<li>
-									<a class="menu-social__link" href="https://www.instagram.com/" target="_blank">Instagram</a>
-								</li>
-								<li>
-									<a class="menu-social__link" href="https://twitter.com/" target="_blank">Twitter</a>
-								</li>
-								<li>
-									<a class="menu-social__link" href="https://www.facebook.com/" target="_blank">Facebook</a>
-								</li>
-								<li>
-									<a class="menu-social__link" href="https://www.linkedin.com/" target="_blank">LinkedIn</a>
-								</li>
-							</ul>
-						</div>
-					</div>
 				</div>
 			</div>
 		</header>
 		<main class="main-wrapper">
 			<section class="section">
 				<div class="container section-wrapper">
-					<div>
+					<div class="contacts-wrapper">
 						<img class="logo-contact" src="./images/favicon.png" width="297" alt="logo" />
-						<p class="social-title">Contact Details</p>
-						<ul>
-							<li>
-								<a class="contacts-link" href="">speedhunters.design@gmail.com</a>
-							</li>
-							<li>
-								<a class="contacts-link" href="">+38 095 111 09 82</a>
-							</li>
-						</ul>
-						<p class="social-title">Social</p>
-						<ul>
-							<li>
-								<a class="contacts-link" href="">Instagram</a>
-							</li>
-							<li>
-								<a class="contacts-link" href="">Instagram</a>
-							</li>
-							<li>
-								<a class="contacts-link" href="">Instagram</a>
-							</li>
-							<li>
-								<a class="contacts-link" href="">Instagram</a>
-							</li>
-						</ul>
+						<div>
+							<p class="social-title">Contact Details</p>
+							<ul>
+								<li>
+									<a class="contacts-link" href="mailtoo:speedhunters.design@gmail.com">
+										speedhunters.design@gmail.com
+									</a>
+								</li>
+								<li>
+									<a class="contacts-link" href="tel:+380951110982">+38 095 111 09 82</a>
+								</li>
+							</ul>
+							<p class="social-title">Social</p>
+							<ul>
+								<li>
+									<a class="contacts-link" href="https://www.instagram.com/hunt3r_npc" target="_blank">Instagram</a>
+								</li>
+								<li>
+									<a class="contacts-link" href="https://www.facebook.com/Fin4H.TNT/" target="_blank">facebook</a>
+								</li>
+								<li>
+									<a class="contacts-link" href="https://github.com/Hunt3RSH" target="_blank">GitHub</a>
+								</li>
+								<li>
+									<a class="contacts-link" href="https://steamcommunity.com/id/Hunt3R_wise/" target="_blank">Steam</a>
+								</li>
+							</ul>
+						</div>
 					</div>
 					<form class="form js-speaker-form">
 						<p class="form-title">Let’s build something cool together</p>
@@ -170,21 +139,64 @@
 					<span class="coppy">Build with 💖 by Hunt3R</span>
 					<ul class="social">
 						<li>
-							<a class="social-link" href="#">link</a>
+							<a class="social-link" href="https://www.instagram.com/hunt3r_npc" target="_blank">Instagram</a>
 						</li>
 						<li>
-							<a class="social-link" href="#">link</a>
+							<a class="social-link" href="https://www.facebook.com/Fin4H.TNT/" target="_blank">facebook</a>
 						</li>
 						<li>
-							<a class="social-link" href="#">link</a>
+							<a class="social-link" href="https://github.com/Hunt3RSH" target="_blank">GitHub</a>
 						</li>
 						<li>
-							<a class="social-link" href="#">link</a>
+							<a class="social-link" href="https://steamcommunity.com/id/Hunt3R_wise/" target="_blank">Steam</a>
 						</li>
 					</ul>
 				</div>
 			</div>
 		</footer>
-		<script src="./scripts/menu.js"></script>
+		<div class="modal is-hidden" data-backdrop>
+			<div class="modal-window">
+				<button class="btn-close" data-close-menu>
+					<svg width="40" height="40">
+						<use href="./images/icons.svg#icon-close"></use>
+					</svg>
+				</button>
+				<div class="menu" id="menu" data-open-menu>
+					<nav>
+						<ul class="menu-nav">
+							<li>
+								<a class="menu-text current-page" href="./index.html">Home</a>
+							</li>
+							<li>
+								<a class="menu-text" href="./index.html#about">About</a>
+							</li>
+							<li>
+								<a class="menu-text" href="./index.html#work">Work</a>
+							</li>
+							<li>
+								<a class="menu-text" href="./contacts.html#contacts">Contact</a>
+							</li>
+						</ul>
+					</nav>
+					<div>
+						<ul class="menu-social">
+							<li>
+								<a class="menu-social__link" href="https://www.instagram.com/hunt3r_npc" target="_blank">Instagram</a>
+							</li>
+							<li>
+								<a class="menu-social__link" href="https://www.facebook.com/Fin4H.TNT/" target="_blank">facebook</a>
+							</li>
+							<li>
+								<a class="menu-social__link" href="https://github.com/Hunt3RSH" target="_blank">GitHub</a>
+							</li>
+							<li>
+								<a class="menu-social__link" href="https://steamcommunity.com/id/Hunt3R_wise/" target="_blank">Steam</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="./scripts/modal.js"></script>
 	</body>
 </html>

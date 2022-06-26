@@ -1,13 +1,13 @@
 <svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <defs>
+<symbol id="icon-arrow" viewBox="0 0 32 32">
+<path d="M21.575 20.919h-1.85l-0.007-7.326-7.981 7.982-1.312-1.312 7.982-7.982-7.325-0.007v-1.849h10.493v10.494z"></path>
+</symbol>
 <symbol id="icon-close" viewBox="0 0 31 32">
-<path stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="1.1034" d="M7.916 23.413l15.606-15.606M23.522 24.193l-15.606-15.605"></path>
+<path stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="1.1034" d="M7.412 23.412l15.606-15.606M23.018 24.193l-15.606-15.605"></path>
 </symbol>
 <symbol id="icon-line" viewBox="0 0 33 32">
 <path stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="1.3333" d="M2.994 13.333h26.667M2.995 18.667h26.667"></path>
-</symbol>
-<symbol id="icon-arrow" viewBox="0 0 32 32">
-<path d="M21.575 20.919h-1.85l-0.007-7.326-7.981 7.982-1.312-1.312 7.982-7.982-7.325-0.007v-1.849h10.493v10.494z"></path>
 </symbol>
 </defs>
 </svg>

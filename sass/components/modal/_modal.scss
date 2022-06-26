@@ -1,10 +1,31 @@
 // -------- інпути-------------------------------------------------------
+.form {
+	@media screen and (max-width: $max-brp-md) {
+	}
+	@media screen and (min-width: $min-brp-md) and (max-width: $max-brp-xl) {
+	}
+	@media screen and (min-width: $min-brp-xl) {
+		width: 630px;
+	}
+}
 .form-title {
 	font-weight: 700;
-	font-size: 60px;
-	line-height: 86px;
+	line-height: 1.43;
 	color: $font-main;
-	margin-bottom: 9px;
+
+	@media screen and (max-width: $max-brp-md) {
+		font-size: 30px;
+		margin-bottom: 30px;
+	}
+	@media screen and (min-width: $min-brp-md) and (max-width: $max-brp-xl) {
+		font-size: 40px;
+		margin-top: 40px;
+		margin-bottom: 30px;
+	}
+	@media screen and (min-width: $min-brp-xl) {
+		font-size: 60px;
+		margin-bottom: 9px;
+	}
 }
 .form-field {
 	display: block;
@@ -15,12 +36,20 @@
 		font-family: "Quantico";
 		font-style: normal;
 		font-weight: 400;
-		font-size: 27px;
 		line-height: 140%;
 	}
 	input::placeholder {
 		color: $font-main;
 		opacity: 0.6;
+		@media screen and (max-width: $max-brp-md) {
+			font-size: 15px;
+		}
+		@media screen and (min-width: $min-brp-md) and (max-width: $max-brp-xl) {
+			font-size: 20px;
+		}
+		@media screen and (min-width: $min-brp-xl) {
+			font-size: 27px;
+		}
 	}
 	input:focus,
 	textarea:focus {
@@ -79,10 +108,18 @@
 	textarea::placeholder {
 		font-style: normal;
 		font-weight: 400;
-		font-size: 27px;
 		line-height: 140%;
 		color: $font-main;
 		opacity: 0.6;
+		@media screen and (max-width: $max-brp-md) {
+			font-size: 15px;
+		}
+		@media screen and (min-width: $min-brp-md) and (max-width: $max-brp-xl) {
+			font-size: 20px;
+		}
+		@media screen and (min-width: $min-brp-xl) {
+			font-size: 27px;
+		}
 	}
 	textarea:focus {
 		border-color: $hover;

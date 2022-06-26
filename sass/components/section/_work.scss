@@ -3,17 +3,30 @@
 	flex-direction: row;
 	justify-content: space-between;
 	padding-bottom: 141px;
+	@media screen and (max-width: $max-brp-md) {
+		padding-bottom: 70px;
+		flex-direction: column;
+	}
+	@media screen and (min-width: $min-brp-md) and (max-width: $max-brp-xl) {
+		flex-direction: column;
+	}
 }
 .work {
 	display: flex;
 	flex-direction: column;
 	gap: 66px;
+	@media screen and (max-width: $max-brp-md) {
+		gap: 33px;
+	}
 }
 .work-item {
 	display: flex;
 	flex-direction: row;
-	width: 847px;
 	justify-content: space-between;
+	align-items: center;
+	@media screen and (min-width: $min-brp-xl) {
+		width: 847px;
+	}
 }
 .work-wrapper {
 }
@@ -24,36 +37,43 @@
 	font-size: 60px;
 	line-height: 1.13;
 	color: $font-main;
+	@media screen and (max-width: $max-brp-md) {
+		font-size: 30px;
+	}
 }
 .work-type {
 	display: flex;
-    gap: 20px;
-    margin-top: 18px;
+	gap: 20px;
+	margin-top: 18px;
 
-    li {
-        position: relative;
-    }
+	li {
+		position: relative;
+	}
 
-    li::after {
-        content: "";
-        position: absolute;
-        right: -14px;
-        top: 0;
-        transform: translateY(14px);
-        width: 8px;
-        height: 2px;
-        background:$background-dark;
-    }
+	li::after {
+		content: "";
+		position: absolute;
+		right: -14px;
+		top: 0;
+		transform: translateY(14px);
+		width: 8px;
+		height: 2px;
+		background: $background-dark;
+	}
 
-    li:last-child::after {
-        display: none;
-    }
+	li:last-child::after {
+		display: none;
+	}
 }
 .work-type__title {
 	font-weight: 400;
 	font-size: 18px;
 	line-height: 160%;
 	color: $font-main;
+	@media screen and (max-width: $max-brp-md) {
+		font-size: 15px;
+		margin-bottom: 15px;
+	}
 }
 .btn-work {
 	display: flex;
@@ -81,5 +101,9 @@
 	&:focus svg {
 		fill: $font-secondary;
 		transform: rotate(45deg);
+	}
+	@media screen and (max-width: $max-brp-md) {
+		width: 85px;
+		height: 85px;
 	}
 }
