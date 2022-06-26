@@ -1,0 +1,21 @@
+.about {
+	padding-top: 160px;
+	padding-bottom: 122px;
+}
+.about-wrapper {
+	display: flex;
+    justify-content: space-between;
+}
+.title {
+	font-weight: 700;
+	font-size: 40px;
+	line-height: 57px;
+	color: $font-main;
+}
+.about-subtitle {
+    width: 839px;
+	font-weight: 400;
+	font-size: 27px;
+	line-height: 140%;
+    color: $font-main;
+}

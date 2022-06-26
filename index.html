@@ -7,98 +7,76 @@
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link
-			href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+			href="https://fonts.googleapis.com/css2?family=Inter&family=Quantico:wght@400;700&display=swap"
 			rel="stylesheet"
-		/>
-		<link
-			rel="stylesheet"
-			href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
 		/>
 		<link rel="stylesheet" href="./css/main.min.css" />
 		<title>WebStudio</title>
-		<link rel="icon" href="./images/icon.avif" />
+		<link rel="icon" href="./images/favicon.png" />
 	</head>
 	<body>
 		<!-- navigation -->
-		<header class="nav_bg">
-			<div class="container nav-center">
-				<nav class="navbar">
-					<a href="index.html" class="logo">
-						<span class="logo-web">Web</span>Studio
-					</a>
-					<ul class="navbar_text">
-						<li>
-							<a class="nav_text active" href="./index.html">Студия</a>
-						</li>
-						<li>
-							<a class="nav_text" href="./portfolio.html">Портфолио</a>
-						</li>
-						<li>
-							<a class="nav_text" href="#contacts">Контакты</a>
-						</li>
-					</ul>
-				</nav>
-				<ul class="contacts">
-					<li>
-						<a class="contacts_nom" href="mailtoo:info@devstudio.com">
-							<svg class="contact_icon" width="16" height="12">
-								<use href="./images/icons.svg#icon-envelope"></use>
-							</svg>
-							info@devstudio.com
-						</a>
-					</li>
-					<li>
-						<a class="contacts_nom" href="tel:+380961111111">
-							<svg class="contact_icon" width="10" height="16">
-								<use href="./images/icons.svg#icon-telephone"></use>
-							</svg>
-							+38 096 111 11 11
-						</a>
-					</li>
-				</ul>
-				<button class="menu-btn" type="button" aria-expanded="false" aria-controls="menu" data-menu-button>
-					<svg width="24" height="24" aria-label="мобильное меню">
-						<use class="menu-btn__open" href="./images/icons.svg#icon-menu"></use>
-						<use class="menu-btn__close" href="./images/icons.svg#icon-close"></use>
-					</svg>
-				</button>
-				<div class="menu" id="menu" data-menu>
+		<header class="container">
+			<div class="nav-wapper">
+				<div class="nav-center">
+					<a class="logo" href="./index.html">Volodymyr "SH" Shamrai</a>
 					<nav>
-						<ul class="menu-nav">
+						<ul class="navbar_text">
 							<li>
-								<a class="menu-text current-page" href="./index.html">Студия</a>
+								<a class="nav_text" href="#about">About</a>
 							</li>
 							<li>
-								<a class="menu-text" href="./portfolio.html">Портфолио</a>
+								<a class="nav_text" href="#work">Work</a>
 							</li>
 							<li>
-								<a class="menu-text" href="#contacts">Контакты</a>
+								<a class="nav_text" href="./contacts.html">Contacts</a>
 							</li>
 						</ul>
 					</nav>
-					<div>
-						<ul class="menu-contact">
-							<li>
-								<a class="contacts-menu" href="tel:+380961111111">+38 096 111 11 11</a>
-							</li>
-							<li>
-								<a class="contacts-menu" href="mailtoo:info@devstudio.com">info@devstudio.com</a>
-							</li>
-						</ul>
-						<ul class="menu-social">
-							<li>
-								<a class="menu-social__link" href="https://www.instagram.com/" target="_blank">Instagram</a>
-							</li>
-							<li>
-								<a class="menu-social__link" href="https://twitter.com/" target="_blank">Twitter</a>
-							</li>
-							<li>
-								<a class="menu-social__link" href="https://www.facebook.com/" target="_blank">Facebook</a>
-							</li>
-							<li>
-								<a class="menu-social__link" href="https://www.linkedin.com/" target="_blank">LinkedIn</a>
-							</li>
-						</ul>
+					<button class="menu-btn" type="button" aria-expanded="false" aria-controls="menu" data-menu-button>
+						<svg width="24" height="24" aria-label="мобильное меню">
+							<use class="menu-btn__open" href="./images/icons.svg#icon-menu"></use>
+							<use class="menu-btn__close" href="./images/icons.svg#icon-close"></use>
+						</svg>
+					</button>
+					<div class="menu" id="menu" data-menu>
+						<nav>
+							<ul class="menu-nav">
+								<li>
+									<a class="menu-text current-page" href="./index.html">Студия</a>
+								</li>
+								<li>
+									<a class="menu-text" href="./portfolio.html">Портфолио</a>
+								</li>
+								<li>
+									<a class="menu-text" href="#contacts">Контакты</a>
+								</li>
+							</ul>
+						</nav>
+						<div>
+							<ul class="menu-contact">
+								<li>
+									<a class="contacts-menu" href="tel:+380961111111">+38 096 111 11 11</a>
+								</li>
+								<li>
+									<a class="contacts-menu" href="mailtoo:info@devstudio.com">info@devstudio.com</a>
+								</li>
+							</ul>
+							<ul class="menu-social">
+								<li>
+									<a class="menu-social__link" href="https://www.instagram.com/" target="_blank">Instagram</a>
+								</li>
+								<li>
+									<a class="menu-social__link" href="https://twitter.com/" target="_blank">Twitter</a>
+								</li>
+								<li>
+									<a class="menu-social__link" href="https://www.facebook.com/" target="_blank">Facebook</a>
+								</li>
+								<li>
+									<a class="menu-social__link" href="https://www.linkedin.com/" target="_blank">LinkedIn</a>
+								</li>
+							</ul>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -106,348 +84,87 @@
 		<main>
 			<!-- hero -->
 			<section class="hero-bg">
-				<div class="container hero">
-					<h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-					<button type="button" class="button hero-btn" data-open-modal>Заказать услугу</button>
+				<div class="hero">
+					<h1 class="hero-title">HTML&CSS Developer</h1>
 				</div>
 			</section>
-			<!-- features -->
-			<section class="section pading-bottom">
-				<div class="container">
-					<h2 class="visually-hidden">особенности</h2>
-					<ul class="feature">
-						<li class="feature-info">
-							<div class="feature-info__icon">
-								<svg width="70" height="70">
-									<use href="./images/icons.svg#icon-antenna"></use>
-								</svg>
-							</div>
-							<h3 class="feature-info__title">Внимание к деталям</h3>
-							<p class="feature-info__subtitle">
-								Идейные соображения, а также начало повседневной работы по формированию позиции.
-							</p>
-						</li>
-						<li class="feature-info">
-							<div class="feature-info__icon">
-								<svg width="70" height="70">
-									<use href="./images/icons.svg#icon-clock"></use>
-								</svg>
-							</div>
-							<h3 class="feature-info__title">Пунктуальность</h3>
-							<p class="feature-info__subtitle">
-								Задача организации, в особенности же рамки и место обучения кадров влечет за собой.
-							</p>
-						</li>
-						<li class="feature-info">
-							<div class="feature-info__icon">
-								<svg width="70" height="70">
-									<use href="./images/icons.svg#icon-diagram"></use>
-								</svg>
-							</div>
-							<h3 class="feature-info__title">Планирование</h3>
-							<p class="feature-info__subtitle">
-								Равным образом консультация с широким активом в значительной степени обуславливает.
-							</p>
-						</li>
-						<li class="feature-info">
-							<div class="feature-info__icon">
-								<svg width="70" height="70">
-									<use href="./images/icons.svg#icon-astronaut"></use>
-								</svg>
-							</div>
-							<h3 class="feature-info__title">Современные технологии</h3>
-							<p class="feature-info__subtitle">
-								Значимость этих проблем настолько очевидна, что реализация плановых заданий.
-							</p>
-						</li>
-					</ul>
+			<!-- About -->
+			<section id="about" class="about">
+				<div class="container about-wrapper">
+					<h2 class="title">About</h2>
+					<p class="about-subtitle">
+						worked for the last 5 years in the field of "people" service, worked as a courier and salesman, for these 5
+						many useful skills in self-developed, at the moment, beginning to learn HTML&CSS and "vanilla" JS. my
+						hobbies are Photoshop, music, computer technology, game.
+					</p>
 				</div>
 			</section>
-			<!-- kind -->
-			<section class="section kind-hide">
-				<div class="container">
-					<h2 class="section-title">Чем мы занимаемся</h2>
-					<ul class="kind">
-						<li class="kind-box">
-							<picture>
-								<source srcset="./images/box/box1.jpg 1x, ./images/box/box1x2.jpg 2x" media="(min-width: 1200px)" />
-								<img class="kind-box__img" src="./images/box/box1.jpg" alt="Десктопные приложения" />
-							</picture>
-							<p class="kind-box__title">Десктопные приложения</p>
-						</li>
-						<li class="kind-box">
-							<picture>
-								<source srcset="./images/box/box2.jpg 1x, ./images/box/box2x2.jpg 2x" media="(min-width: 1200px)" />
-								<img class="kind-box__img" src="./images/box/box2.jpg" alt="Мобильные приложения" />
-							</picture>
-							<p class="kind-box__title">Мобильные приложения</p>
-						</li>
-						<li class="kind-box">
-							<picture>
-								<source srcset="./images/box/box3.jpg 1x, ./images/box/box3x2.jpg 2x" media="(min-width: 1200px)" />
-								<img class="kind-box__img" src="./images/box/box3.jpg" alt="Дизайнерские решения" />
-							</picture>
-							<p class="kind-box__title">Дизайнерские решения</p>
-						</li>
-					</ul>
-				</div>
-			</section>
-			<!-- team cards -->
-			<section class="section bg_collor_team" id="contacts">
-				<div class="container">
-					<h2 class="section-title">Наша команда</h2>
-					<ul class="cardlist">
-						<li class="card">
-							<picture>
-								<source
-									srcset="./images/card/xl/card1x1xl.jpg 1x, ./images/card/xl/card1x2xl.jpg 2x"
-									media="(min-width: 1200px)"
-								/>
-								<source
-									srcset="./images/card/md/card1x1md.jpg 1x, ./images/card/md/card1x2md.jpg 2x"
-									media="(min-width: 768px)"
-								/>
-								<source
-									srcset="./images/card/sm/card1x1sm.jpg 1x, ./images/card/sm/card1x2sm.jpg 2x"
-									media="(max-width: 767px)"
-								/>
-								<img class="card-img" src="./images/card/card1.jpg" alt="Игорь Демьяненко" />
-							</picture>
-							<div class="card-description">
-								<h3 class="card_name">Игорь Демьяненко</h3>
-								<p class="card_info">Product Designer</p>
-								<ul class="social">
+			<!-- Recent Work -->
+			<section id="work">
+				<div class="container recent-wrapper">
+					<h2 class="title">Recent Work</h2>
+					<ul class="work">
+						<li class="work-item">
+							<div class="work-wrapper">
+								<h3 class="work-wrapper__title">Decodable.co</h3>
+								<ul class="work-type">
 									<li>
-										<a href="https://www.instagram.com/" target="_blank" class="social_btn">
-											<svg width="20" height="20">
-												<use href="./images/icons.svg#icon-instagram"></use>
-											</svg>
-										</a>
+										<p class="work-type__title">Brand Design</p>
 									</li>
 									<li>
-										<a href="https://twitter.com/" target="_blank" class="social_btn">
-											<svg width="20" height="20">
-												<use href="./images/icons.svg#icon-twitter"></use>
-											</svg>
-										</a>
+										<p class="work-type__title">Webflow Development</p>
 									</li>
 									<li>
-										<a href="https://www.facebook.com/" target="_blank" class="social_btn">
-											<svg width="20" height="20">
-												<use href="./images/icons.svg#icon-facebook"></use>
-											</svg>
-										</a>
-									</li>
-									<li>
-										<a href="https://www.linkedin.com/" target="_blank" class="social_btn">
-											<svg width="20" height="20">
-												<use href="./images/icons.svg#icon-linkedin"></use>
-											</svg>
-										</a>
+										<p class="work-type__title">Web Design</p>
 									</li>
 								</ul>
 							</div>
+							<a class="btn-work" href="Decodable.co">
+								<svg width="80" height="80">
+									<use href="./images/icon.svg#icon-arrow"></use>
+								</svg>
+							</a>
 						</li>
-						<li class="card">
-							<picture>
-								<source
-									srcset="./images/card/xl/card2x1xl.jpg 1x, ./images/card/xl/card2x2xl.jpg 2x"
-									media="(min-width: 1200px)"
-								/>
-								<source
-									srcset="./images/card/md/card2x1md.jpg 1x, ./images/card/md/card2x2md.jpg 2x"
-									media="(min-width: 768px)"
-								/>
-								<source
-									srcset="./images/card/sm/card2x1sm.jpg 1x, ./images/card/sm/card2x2sm.jpg 2x"
-									media="(max-width: 767px)"
-								/>
-								<img class="card-img" src="./images/card/card2.jpg" alt="Ольга Репина" />
-							</picture>
-							<div class="card-description">
-								<h3 class="card_name">Ольга Репина</h3>
-								<p class="card_info">Frontend Developer</p>
-								<ul class="social">
+						<li class="work-item">
+							<div class="work-wrapper">
+								<h3 class="work-wrapper__title">Decodable.co</h3>
+								<ul class="work-type">
 									<li>
-										<a href="https://www.instagram.com/" target="_blank" class="social_btn">
-											<svg width="20" height="20">
-												<use href="./images/icons.svg#icon-instagram"></use>
-											</svg>
-										</a>
+										<p class="work-type__title">Brand Design</p>
 									</li>
 									<li>
-										<a href="https://twitter.com/" target="_blank" class="social_btn">
-											<svg width="20" height="20">
-												<use href="./images/icons.svg#icon-twitter"></use>
-											</svg>
-										</a>
+										<p class="work-type__title">Webflow Development</p>
 									</li>
 									<li>
-										<a href="https://www.facebook.com/" target="_blank" class="social_btn">
-											<svg width="20" height="20">
-												<use href="./images/icons.svg#icon-facebook"></use>
-											</svg>
-										</a>
-									</li>
-									<li>
-										<a href="https://www.linkedin.com/" target="_blank" class="social_btn">
-											<svg width="20" height="20">
-												<use href="./images/icons.svg#icon-linkedin"></use>
-											</svg>
-										</a>
+										<p class="work-type__title">Web Design</p>
 									</li>
 								</ul>
 							</div>
+							<a class="btn-work" href="Decodable.co">
+								<svg width="80" height="80">
+									<use href="./images/icon.svg#icon-arrow"></use>
+								</svg>
+							</a>
 						</li>
-						<li class="card">
-							<picture>
-								<source
-									srcset="./images/card/xl/card3x1xl.jpg 1x, ./images/card/xl/card3x2xl.jpg 2x"
-									media="(min-width: 1200px)"
-								/>
-								<source
-									srcset="./images/card/md/card3x1md.jpg 1x, ./images/card/md/card3x2md.jpg 2x"
-									media="(min-width: 768px)"
-								/>
-								<source
-									srcset="./images/card/sm/card3x1sm.jpg 1x, ./images/card/sm/card3x2sm.jpg 2x"
-									media="(max-width: 767px)"
-								/>
-								<img class="card-img" src="./images/card/card3.jpg" alt="Николай Тарасов" />
-							</picture>
-							<div class="card-description">
-								<h3 class="card_name">Николай Тарасов</h3>
-								<p class="card_info">Marketing</p>
-								<ul class="social">
+
+						<li class="work-item">
+							<div class="work-wrapper">
+								<h3 class="work-wrapper__title">Decodable.co</h3>
+								<ul class="work-type">
 									<li>
-										<a href="https://www.instagram.com/" target="_blank" class="social_btn">
-											<svg width="20" height="20">
-												<use href="./images/icons.svg#icon-instagram"></use>
-											</svg>
-										</a>
+										<p class="work-type__title">Brand Design</p>
 									</li>
 									<li>
-										<a href="https://twitter.com/" target="_blank" class="social_btn">
-											<svg width="20" height="20">
-												<use href="./images/icons.svg#icon-twitter"></use>
-											</svg>
-										</a>
+										<p class="work-type__title">Webflow Development</p>
 									</li>
 									<li>
-										<a href="https://www.facebook.com/" target="_blank" class="social_btn">
-											<svg width="20" height="20">
-												<use href="./images/icons.svg#icon-facebook"></use>
-											</svg>
-										</a>
-									</li>
-									<li>
-										<a href="https://www.linkedin.com/" target="_blank" class="social_btn">
-											<svg width="20" height="20">
-												<use href="./images/icons.svg#icon-linkedin"></use>
-											</svg>
-										</a>
+										<p class="work-type__title">Web Design</p>
 									</li>
 								</ul>
 							</div>
-						</li>
-						<li class="card">
-							<picture>
-								<source
-									srcset="./images/card/xl/card4x1xl.jpg 1x, ./images/card/xl/card4x2xl.jpg 2x"
-									media="(min-width: 1200px)"
-								/>
-								<source
-									srcset="./images/card/md/card4x1md.jpg 1x, ./images/card/md/card4x2md.jpg 2x"
-									media="(min-width: 768px)"
-								/>
-								<source
-									srcset="./images/card/sm/card4x1sm.jpg 1x, ./images/card/sm/card4x2sm.jpg 2x"
-									media="(max-width: 767px)"
-								/>
-								<img class="card-img" src="./images/card/card4.jpg" alt="Михаил Ермаков" />
-							</picture>
-							<div class="card-description">
-								<h3 class="card_name">Михаил Ермаков</h3>
-								<p class="card_info">UI Designer</p>
-								<ul class="social">
-									<li>
-										<a href="https://www.instagram.com/" target="_blank" class="social_btn">
-											<svg width="20" height="20">
-												<use href="./images/icons.svg#icon-instagram"></use>
-											</svg>
-										</a>
-									</li>
-									<li>
-										<a href="https://twitter.com/" target="_blank" class="social_btn">
-											<svg width="20" height="20">
-												<use href="./images/icons.svg#icon-twitter"></use>
-											</svg>
-										</a>
-									</li>
-									<li>
-										<a href="https://www.facebook.com/" target="_blank" class="social_btn">
-											<svg width="20" height="20">
-												<use href="./images/icons.svg#icon-facebook"></use>
-											</svg>
-										</a>
-									</li>
-									<li>
-										<a href="https://www.linkedin.com/" target="_blank" class="social_btn">
-											<svg width="20" height="20">
-												<use href="./images/icons.svg#icon-linkedin"></use>
-											</svg>
-										</a>
-									</li>
-								</ul>
-							</div>
-						</li>
-					</ul>
-				</div>
-			</section>
-			<!-- parthners -->
-			<section class="section">
-				<div class="container">
-					<h2 class="section-title">Постоянные клиенты</h2>
-					<ul class="parthners">
-						<li class="parthners-group">
-							<a class="parthners-group__item" href="https://www.youtube.com/" target="_blank">
-								<svg width="106" height="60">
-									<use href="./images/icons.svg#icon-group1"></use>
-								</svg>
-							</a>
-						</li>
-						<li class="parthners-group">
-							<a class="parthners-group__item" href="https://www.youtube.com/" target="_blank">
-								<svg width="106" height="60">
-									<use href="./images/icons.svg#icon-group2"></use>
-								</svg>
-							</a>
-						</li>
-						<li class="parthners-group">
-							<a class="parthners-group__item" href="https://www.youtube.com/" target="_blank">
-								<svg width="106" height="60">
-									<use href="./images/icons.svg#icon-group3"></use>
-								</svg>
-							</a>
-						</li>
-						<li class="parthners-group">
-							<a class="parthners-group__item" href="https://www.youtube.com/" target="_blank">
-								<svg width="106" height="60">
-									<use href="./images/icons.svg#icon-group4"></use>
-								</svg>
-							</a>
-						</li>
-						<li class="parthners-group">
-							<a class="parthners-group__item" href="https://www.youtube.com/" target="_blank">
-								<svg width="106" height="60">
-									<use href="./images/icons.svg#icon-group5"></use>
-								</svg>
-							</a>
-						</li>
-						<li class="parthners-group">
-							<a class="parthners-group__item" href="https://www.youtube.com/" target="_blank">
-								<svg width="106" height="60">
-									<use href="./images/icons.svg#icon-group6"></use>
+							<a class="btn-work" href="Decodable.co">
+								<svg width="80" height="80">
+									<use href="./images/icon.svg#icon-arrow"></use>
 								</svg>
 							</a>
 						</li>
@@ -458,87 +175,34 @@
 		<!-- footer form -->
 		<footer class="bg_footer">
 			<div class="container baseline">
-				<div class="footer-wrapper">
-					<div class="baseline-wrapper">
-						<a href="index.html" class="logo">
-							<span class="logo-web">Web</span><span class="logo-studio">Studio</span>
-						</a>
-						<address class="address">
-							<ul>
-								<li class="address-title">
-									<a
-										class="adress"
-										rel="noreferrer noopener"
-										href="https://goo.gl/maps/onebCgwVkrG4jNfo6"
-										target="_blank"
-									>
-										г. Киев, пр-т Леси Украинки, 26
-									</a>
-								</li>
-								<li class="address-title">
-									<a class="nomber" href="mailto:info@example.com">info@example.com</a>
-								</li>
-								<li class="address-title">
-									<a class="nomber" href="tel:+380991111111">+38 099 111 11 11</a>
-								</li>
-							</ul>
-						</address>
-					</div>
-
-					<div class="baseline-wrapper social-footer">
-						<p class="connect">присоединяйтесь</p>
-						<ul class="social">
-							<li>
-								<a href="https://www.instagram.com/" target="_blank" class="social_btn_footer">
-									<svg width="20" height="20">
-										<use href="./images/icons.svg#icon-instagram"></use>
-									</svg>
-								</a>
-							</li>
-							<li>
-								<a href="https://twitter.com/" target="_blank" class="social_btn_footer">
-									<svg width="20" height="20">
-										<use href="./images/icons.svg#icon-twitter"></use>
-									</svg>
-								</a>
-							</li>
-							<li>
-								<a href="https://www.facebook.com/" target="_blank" class="social_btn_footer">
-									<svg width="20" height="20">
-										<use href="./images/icons.svg#icon-facebook"></use>
-									</svg>
-								</a>
-							</li>
-							<li>
-								<a href="https://www.linkedin.com/" target="_blank" class="social_btn_footer">
-									<svg width="20" height="20">
-										<use href="./images/icons.svg#icon-linkedin"></use>
-									</svg>
-								</a>
-							</li>
-						</ul>
-					</div>
+				<div class="baseline-wrapper">
+					<ul>
+						<li>
+							<p class="footer-title">Have something in mind?</p>
+						</li>
+						<li>
+							<p class="footer-subtitle">let’s build it together.</p>
+						</li>
+					</ul>
+					<a class="btn-light" href="./contacts.html">Get in touch</a>
 				</div>
-
-				<form class="form-wrapper js-speaker-form">
-					<p class="connect">Подпишитесь на рассылку</p>
-					<div class="footer-form">
-						<input
-							class="footer-form__input"
-							type="email"
-							name="email"
-							required
-							placeholder="E-mail"
-							autocomplete="email"
-						/>
-						<button class="footer-form__btn button" type="submit">
-							Подписаться
-							<svg class="footer-form__icon" width="24" height="24">
-								<use href="./images/icons.svg#icon-send"></use>
-							</svg>
-						</button>
-					</div>
-				</form>
+				<div class="social-wrapper">
+					<span class="coppy">Build with 💖 by Hunt3R</span>
+					<ul class="social">
+						<li>
+							<a class="social-link" href="#">link</a>
+						</li>
+						<li>
+							<a class="social-link" href="#">link</a>
+						</li>
+						<li>
+							<a class="social-link" href="#">link</a>
+						</li>
+						<li>
+							<a class="social-link" href="#">link</a>
+						</li>
+					</ul>
+				</div>
 			</div>
 		</footer>
 		<div class="modal is-hidden" data-backdrop>
@@ -603,6 +267,6 @@
 			</div>
 		</div>
 		<script src="./scripts/menu.js"></script>
-		<script src="./scripts/modal.js"></script>
+		<!-- <script src="./scripts/modal.js"></script> -->
 	</body>
 </html>

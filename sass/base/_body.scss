@@ -6,11 +6,6 @@ body {
 body.lock {
 	overflow: hidden;
 }
-main {
-	@media screen and (max-width: $max-brp-md) {
-		margin-top: 60px;
-	}
-}
 /* scrollbar */
 ::-webkit-scrollbar {
 	@media screen and (min-width: $min-brp-md) {

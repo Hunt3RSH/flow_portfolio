@@ -16,19 +16,6 @@
 
 	transition-property: opacity, visibility;
 	@extend %animation;
-	// @media screen and (max-width: $max-brp-sm) {
-	//     padding-top: 93px;
-	//     padding-bottom: 93px;
-	// }
-	// @media screen and (min-width: $min-brp-sm) and
-	// (max-width: $max-brp-xl) {
-	//     padding-top: 203px;
-	//     padding-bottom: 203px;
-	// }
-	// @media screen and (min-width: $min-brp-xl) {
-	//     padding-top: 221px;
-	//     padding-bottom: 221px;
-	// }
 }
 .modal.is-hidden {
 	visibility: hidden;
@@ -70,28 +57,8 @@
 		transform: translate(0, 20%);
 	}
 }
-.btn-close {
-	position: absolute;
-	right: 8px;
-	top: 8px;
-	width: 30px;
-	height: 30px;
-	padding: 0;
-	border-radius: 50%;
-	fill: black;
-	border: 1px solid rgba(0, 0, 0, 0.1);
-	background: none;
-	cursor: pointer;
-	svg {
-		transition-property: fill;
-		@extend %animation;
-	}
-	&:hover svg,
-	&:focus svg {
-		fill: var(--hover-blue);
-	}
-}
 .form {
+	width: 630px;
 }
 .js-speaker-form {
 }

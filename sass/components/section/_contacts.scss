@@ -1,0 +1,36 @@
+.main-wrapper {
+	margin-top: 170px;
+}
+.section {
+	padding-top: 58px;
+	padding-bottom: 96px;
+}
+.section-wrapper {
+	display: flex;
+	justify-content: space-between;
+}
+.logo-contact {
+	background-color: $background-light;
+	border-radius: 50%;
+}
+.social-title {
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 160%;
+	margin-top: 56px;
+	color: $font-main;
+}
+.contacts-link {
+	font-weight: 400;
+	font-size: 27px;
+	line-height: 140%;
+	margin-top: 8px;
+	color: $background-color;
+
+	transition-property: color;
+	@extend %animation;
+	&:hover,
+	&:focus {
+		color: $hover;
+	}
+}
