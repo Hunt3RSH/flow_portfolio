@@ -53,6 +53,14 @@
 		justify-content: center;
 	}
 }
+.socials {
+	@media screen and (max-width: $max-brp-md) {
+		display: flex;
+		justify-content: center;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+}
 .contacts-link {
 	font-weight: 400;
 	// font-size: 27px;

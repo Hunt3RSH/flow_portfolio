@@ -96,10 +96,12 @@
 }
 .social {
 	display: flex;
-	gap: 32px;
 	@media screen and (max-width: $max-brp-md) {
-		flex-wrap: wrap;
-		gap: 15px;
+		width: 100%;
+		justify-content: space-between;
+	}
+	@media screen and (min-width: $min-brp-md) {
+		gap: 32px;
 	}
 }
 .social-link {
