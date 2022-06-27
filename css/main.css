@@ -629,7 +629,6 @@ li {
   display: flex;
   gap: 20px;
   margin-top: 32px;
-  margin-bottom: 32px;
 }
 .work-type li {
   position: relative;
@@ -647,6 +646,11 @@ li {
 }
 .work-type li:last-child::after {
   display: none;
+}
+@media screen and (max-width: 767px) {
+  .work-type {
+    margin-bottom: 32px;
+  }
 }
 
 .work-type__title {

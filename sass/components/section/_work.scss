@@ -58,7 +58,6 @@
 	display: flex;
 	gap: 20px;
 	margin-top: 32px;
-	margin-bottom: 32px;
 
 	li {
 		position: relative;
@@ -77,6 +76,9 @@
 
 	li:last-child::after {
 		display: none;
+	}
+	@media screen and (max-width: $max-brp-md) {
+		margin-bottom: 32px;
 	}
 }
 .work-type__title {
