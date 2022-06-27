@@ -639,6 +639,9 @@ li {
     margin-bottom: 15px;
   }
 }
+.work-type__title span {
+  color: #f34121;
+}
 
 .btn-work {
   display: -webkit-box;
