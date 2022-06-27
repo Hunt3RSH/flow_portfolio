@@ -96,11 +96,12 @@
 	svg {
 		transition-property: fill, transform;
 		@extend %animation;
+		transform: rotate(-45deg);
 	}
 	&:hover svg,
 	&:focus svg {
 		fill: $font-secondary;
-		transform: rotate(45deg);
+		transform: rotate(0deg);
 	}
 	@media screen and (max-width: $max-brp-md) {
 		width: 85px;

@@ -3,6 +3,9 @@
 <symbol id="icon-arrow" viewBox="0 0 32 32">
 <path d="M21.575 20.919h-1.85l-0.007-7.326-7.981 7.982-1.312-1.312 7.982-7.982-7.325-0.007v-1.849h10.493v10.494z"></path>
 </symbol>
+<symbol id="icon-arrow_forward" viewBox="0 0 32 32">
+<path d="M16 5.3l-1.9 2 7.5 7.4h-16.3v2.6h16.3l-7.6 7.5 1.9 1.9 10.8-10.7-10.7-10.7z"></path>
+</symbol>
 <symbol id="icon-close" viewBox="0 0 31 32">
 <path stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="1.1034" d="M7.412 23.412l15.606-15.606M23.018 24.193l-15.606-15.605"></path>
 </symbol>
