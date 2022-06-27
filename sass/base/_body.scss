@@ -2,6 +2,7 @@ body {
 	font-family: $fontPrimary, $fontSecondary;
 	color: var(--font-main);
 	margin: 0;
+	background-color: $font-secondary;
 }
 body.lock {
 	overflow: hidden;

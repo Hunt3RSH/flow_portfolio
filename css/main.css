@@ -9,6 +9,7 @@ body {
   font-family: "Quantico", sans-serif, "Inter", sans-serif;
   color: var(--font-main);
   margin: 0;
+  background-color: #F4F7FA;
 }
 
 body.lock {
@@ -1152,6 +1153,7 @@ li {
   border-left: none;
   border-right: none;
   outline: none;
+  background-color: transparent;
   -webkit-transition-property: border-color;
   transition-property: border-color;
 }
@@ -1189,6 +1191,7 @@ li {
   line-height: 140%;
   color: #212121;
   height: 158px;
+  background-color: transparent;
   -webkit-transition-property: border-color;
   transition-property: border-color;
 }

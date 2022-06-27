@@ -65,6 +65,7 @@
 	border-left: none;
 	border-right: none;
 	outline: none;
+	background-color: transparent;
 
 	transition-property: border-color;
 	@extend %animation;
@@ -101,6 +102,7 @@
 		line-height: 140%;
 		color: $font-main;
 		height: 158px;
+		background-color: transparent;
 
 		transition-property: border-color;
 		@extend %animation;
